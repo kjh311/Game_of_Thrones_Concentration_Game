@@ -1,14 +1,14 @@
-Game of Thrones Concentration / Memory Game
+#Game of Thrones Concentration / Memory Game
 
 Possible "User Stories"
 
-MVP: Minimum Viable Product
+##MVP: Minimum Viable Product
 
 - cards are placed randomly based on math
 
 - Card Pairs with various GOT characters
 
-- each pair is a point that adds up
+- each pair is a point that gets added to player's score
 
 - cards flip over for at least a second
 
@@ -16,7 +16,7 @@ MVP: Minimum Viable Product
 
 - Player with most points wins
 
-ICEBOX: Extra Features
+##ICEBOX: Extra Features
 
 - a dradon card can be played that resuffles all the cards
 
