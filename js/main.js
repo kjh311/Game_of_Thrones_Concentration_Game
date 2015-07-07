@@ -7,6 +7,8 @@ $( document ).ready(function() {
   var arr = ["jon", "jon", "joff", "joff", "cercei", "cercei", "drogo", "drogo", "selmy", "selmy", "melisandre", "melisandre", "dany", "dany", "tyrion", "tyrion", "sansa", "sansa", "ned", "ned", "jamie", "jamie", "jorah", "jorah"];
 
 
+  var total_points = parseInt(player1_Score) + parseInt(player1_Score);
+
   var memory_value = [];
   // var memory_tile_ids = [];
   var tiles_flipped = 0;
@@ -37,7 +39,7 @@ $( document ).ready(function() {
 }
 
 shuffle(arr);
-// alert(arr);
+alert(arr);
 
 // var is_game_on = function(){
 //   if (game_on === "false"){
@@ -115,6 +117,11 @@ var check_if_match = function(){
         $('#player2_Score').html(player2_Score += 1);
 
       }
+      console.log(total_points);
+      console.log(player1_Score);
+      console.log(player2_Score);
+
+
 
       memory_value[0].fadeTo(1000, 0);
       memory_value[1].fadeTo(1000, 0);
