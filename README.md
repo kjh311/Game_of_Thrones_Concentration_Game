@@ -10,7 +10,7 @@ Possible "User Stories"
 
 - each pair is a point that gets added to player's score
 
-- cards flip over for at least a second
+- cards flip over for at least a second, if a pair is sucessfully found, cards remain flipped over
 
 - 2 players, switches turns and lets user know whose turn it is
 

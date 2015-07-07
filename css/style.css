@@ -1,6 +1,225 @@
+caption{
+  color: white;
+  opacity: 0.8;
+  font-size: 40px;
+  font-family: 'IM Fell English SC', serif;
+  font-style: bold;
+}
 
-  body{
-    padding: 0;
-    margin: 0;
-  }
+.square{
+  opacity: 0.8;
+  border: 5px solid rgba(0,0,0,1);
+  height: 180px;
+  width: 110px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  background-size: 135%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body{
+  background-image: url("http://wallsfx.com/crush.php?src=/wallpapers/Game-of-Thrones-The-Wall-Jon-Snow-direwolf-Nights-Watch-_118035-34.jpg&h=400&w=640&zc=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.square:hover {
+  border: 5px solid red;
+  /*background-size: cover;
+  background-repeat: no-repeat;*/
+}
+
+
+table{
+  margin: 0 auto;
+}
+
+.jon{
+  background-image: url("http://img2.wikia.nocookie.net/__cb20140328150111/gameofthrones/images/a/a1/Jon-Snow-S4.jpg");
+
+}
+
+.jon2{
+  background-image: url("http://img2.wikia.nocookie.net/__cb20140328150111/gameofthrones/images/a/a1/Jon-Snow-S4.jpg");
+
+}
+
+.joff{
+  background-image: url("http://img4.wikia.nocookie.net/__cb20120703113312/gameofthrones/images/0/0b/Joffrey_HBO_Promo_Shot_2012.jpg");
+}
+
+.joff2{
+  background-image: url("http://img4.wikia.nocookie.net/__cb20120703113312/gameofthrones/images/0/0b/Joffrey_HBO_Promo_Shot_2012.jpg");
+}
+
+.cercei{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHy5WBLbuWU3GJ8jdJn--HzVoEDk74KosbDe4NWjAxhe0upHZv2g");
+}
+
+.cercei2{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHy5WBLbuWU3GJ8jdJn--HzVoEDk74KosbDe4NWjAxhe0upHZv2g");
+}
+
+.drogo{
+background-image: url("http://img4.wikia.nocookie.net/__cb20110626031733/gameofthrones/images/1/1f/Drogo_1x01b.jpg");
+}
+
+.drogo2{
+background-image: url("http://img4.wikia.nocookie.net/__cb20110626031733/gameofthrones/images/1/1f/Drogo_1x01b.jpg");
+}
+
+.selmy{
+background-image: url("http://static.comicvine.com/uploads/original/11117/111170099/3979483-9410200601-31981.jpg");
+}
+
+.selmy2{
+background-image: url("http://static.comicvine.com/uploads/original/11117/111170099/3979483-9410200601-31981.jpg");
+}
+
+.melisandre{
+  background-image: url("https://s-media-cache-ak0.pinimg.com/236x/be/da/11/beda115fced505030ca36ebae388440b.jpg");
+}
+
+.melisandre2{
+  background-image: url("https://s-media-cache-ak0.pinimg.com/236x/be/da/11/beda115fced505030ca36ebae388440b.jpg");
+}
+
+.dany{
+  background-image: url("https://40.media.tumblr.com/2895c2877842762fb091b982ef7f77d6/tumblr_npn8t9sk141tc5piho1_500.png");
+}
+
+.dany2{
+  background-image: url("https://40.media.tumblr.com/2895c2877842762fb091b982ef7f77d6/tumblr_npn8t9sk141tc5piho1_500.png");
+}
+
+.tyrion{
+  background-image: url("http://img2.wikia.nocookie.net/__cb20140623111310/gameofthrones/images/5/51/Tyrion_Lannister_Profile.jpg");
+}
+
+.tyrion2{
+  background-image: url("http://img2.wikia.nocookie.net/__cb20140623111310/gameofthrones/images/5/51/Tyrion_Lannister_Profile.jpg");
+}
+
+.sansa{
+  background-image: url("http://images5.fanpop.com/image/photos/31200000/Sansa-Stark-game-of-thrones-31259538-640-960.png");
+}
+
+.sansa2{
+  background-image: url("http://images5.fanpop.com/image/photos/31200000/Sansa-Stark-game-of-thrones-31259538-640-960.png");
+}
+
+.ned{
+  background-image: url("http://img3.wikia.nocookie.net/__cb20110626030942/gameofthrones/images/9/9c/EddardStark.jpg");
+}
+
+.ned2{
+  background-image: url("http://img3.wikia.nocookie.net/__cb20110626030942/gameofthrones/images/9/9c/EddardStark.jpg");
+}
+
+.jamie{
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/b/b5/JaimeLannister.jpg");
+}
+
+.jamie2{
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/b/b5/JaimeLannister.jpg");
+}
+
+/*.varys{
+  background-image: url("http://images6.fanpop.com/image/photos/34700000/got-game-of-thrones-34775506-3328-4992.jpg);
+}
+
+.varys2{
+  background-image: url("http://images6.fanpop.com/image/photos/34700000/got-game-of-thrones-34775506-3328-4992.jpg);
+}*/
+
+.jorah{
+  background-image: url("http://i.dailymail.co.uk/i/pix/2013/12/13/article-2522915-1A08E26B00000578-977_306x520.jpg");
+}
+
+.jorah2{
+  background-image: url("http://i.dailymail.co.uk/i/pix/2013/12/13/article-2522915-1A08E26B00000578-977_306x520.jpg");
+}
+
+.back{
+  background-image: url("http://rivista-cdn.postcity.com/images/2012-03-March/gameofthrones1.jpg?ver=1331230262");
+
+}
+
+
+
+
+#snow{
+  background: none;
+  font-family: Androgyne;
+  background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index:-1;
+  -webkit-animation: snow 15s linear infinite;
+  -moz-animation: snow 15s linear infinite;
+  -ms-animation: snow 15s linear infinite;
+  animation: snow 15s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+.player{
+  color: white;
+  opacity: 0.8;
+  /*position: inline;*/
+  font-size: 30px;
+  /*bottom: 20px;*/
+
+}
+
+#player1{
+  float: left;
+ /* display: relative;*/
+ /* left: 200px;*/
+}
+
+#player2{
+  float: right;
+  display: relative;
+  /*right: 20px;*/
+}
+
+#player1_Score{
+  position: relative;
+  left: 50px;
+  font-size: 70px;
+  opacity: 0.8;
+}
+
+#player2_Score{
+  position: relative;
+  left: 20px;
+  font-size: 70px;
+  opacity: 0.8;
+}
+
 
