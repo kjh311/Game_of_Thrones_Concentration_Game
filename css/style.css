@@ -24,6 +24,8 @@ body{
   background-image: url("http://wallsfx.com/crush.php?src=/wallpapers/Game-of-Thrones-The-Wall-Jon-Snow-direwolf-Nights-Watch-_118035-34.jpg&h=400&w=640&zc=1");
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: 'IM Fell English SC', serif;
+  font-weight: bold;
 }
 
 .player1_current {
@@ -37,12 +39,6 @@ body{
   /*background-size: cover;
   background-repeat: no-repeat;*/
 }
-
-/*.square:hover {
-  border: 5px solid #3399FF;
-  background-size: cover;
-  background-repeat: no-repeat;
-}*/
 
 
 
@@ -142,7 +138,7 @@ background-image: url("http://static.comicvine.com/uploads/original/11117/111170
 
 .player{
   color: white;
-  opacity: 0.8;
+  opacity: 0.9;
   /*position: inline;*/
   font-size: 30px;
   /*bottom: 20px;*/
@@ -162,26 +158,26 @@ background-image: url("http://static.comicvine.com/uploads/original/11117/111170
 
 .player1Current{
   background-color: #3399FF;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .player2Current{
   background-color: #990099;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 #player1_Score{
   position: relative;
   left: 50px;
-  font-size: 70px;
-  opacity: 0.8;
+  font-size: 100px;
+  opacity: 0.9;
 }
 
 #player2_Score{
   position: relative;
   left: 20px;
-  font-size: 70px;
-  opacity: 0.8;
+  font-size: 100px;
+  opacity: 0.9;
 }
 
 
