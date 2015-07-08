@@ -9,6 +9,27 @@ caption{
   border-radius: 20px;*/
 }
 
+#winter{
+  border: 2px solid rgba(0,0,0,0);
+  width: 150px;
+  height: 50px;
+
+  margin: 0 auto;
+  position: relative;
+  bottom: 240px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 20px;
+  opacity: 0.6;
+  position: relative;
+}
+
+#winter:hover{
+border: 2px solid red;
+}
+
 .square{
   opacity: 0.8;
   border: 5px solid rgba(0,0,0,1);
@@ -174,7 +195,7 @@ background-image: url("http://static.comicvine.com/uploads/original/11117/111170
 }
 
 /*snow falling effect*/
-#snow{
+.snow{
   background: none;
   font-family: Androgyne;
   background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
@@ -303,12 +324,14 @@ background-image: url("http://static.comicvine.com/uploads/original/11117/111170
   position: relative;
   left: 175px;
   bottom: 80px;
-  height: 70px;
-  width: 100px;
+  height: 90px;
+  width: 130px;
   border-radius: 10px;
   opacity: 0.8;
   font-size: 20px;
   color: white;
+  background-color: black;
+  font-family: 'IM Fell English SC', serif;
 }
 
 #button:hover{
@@ -363,9 +386,12 @@ table{
 .square{
   height: 80px;
 }
-/*.square{
-  float: left;
-}*/
+
+#play_again{
+  position: relative;
+  bottom: 120px;
+}
+
 table{
   width: 100%;
 }

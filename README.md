@@ -1,5 +1,10 @@
 #Game of Thrones Concentration / Memory Game
 
+##Rules:
+Basic card matching memory game.
+Find 2 matches get a point.
+Player with most points wins.
+
 ##Possible "User Stories"
 
 ##MVP: Minimum Viable Product
@@ -37,6 +42,9 @@
 ###DONE!!
 
 - background changes randomly
+###DONE!!
+
+- added button to make it snow and remove snow
 ###DONE!!
 
 - a dradon card can be played that resuffles all the cards

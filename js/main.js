@@ -59,17 +59,17 @@ getRandom();
 }
 
 shuffle(arr);
-// alert(arr);
+// alert(arr)
 
 //don't want to click on same card twice
-var add_to_tiles_flipped = function(){
-  if (memory_value[0] === memory_value[1]){
-    memory_value.pop();
-    return;
-  }else {
-    tiles_flipped ++;
-  }
-}
+// var add_to_tiles_flipped = function(){
+//   if (memory_value[0] === memory_value[1]){
+//     memory_value.pop();
+//     return;
+//   }else {
+//     tiles_flipped ++;
+//   }
+// }
 
 //changes player turn
 function changeTurn() {
@@ -85,7 +85,6 @@ function changeTurn() {
 
 //checks whose turn it is
 var check_current_player = function(){
-
 
   if (current_player === "player1"){
     $('#player1 p').addClass('player1Current');
@@ -159,22 +158,17 @@ var check_if_match = function(){
         $('#player2_Score').html(player2_Score += 1);
 
         if(player1_Score + player2_Score === 12 && player2_Score > player1_Score){
-          // alert("player 2 wins!!");
-
 
           $('#play_again').removeClass("hidden");
           $('#winner').html("Player 2!!!");
           $('#play_again').fadeOut(0);
           $('#play_again').fadeTo(1000, 1);
         }else if(player1_Score + player2_Score === 12 && player1_Score === player2_Score){
-          // alert("Tie!!");
-
           $('#play_again').removeClass("hidden");
           $('#winner').html("Tie!!");
           $('#play_again').fadeOut(0);
           $('#play_again').fadeTo(1000, 1);
         }
-
       }
 
       //fades out matches
@@ -185,7 +179,6 @@ var check_if_match = function(){
       var reset_mem_value = function(){
         memory_value = [];
         game_on = "true";
-        console.log(game_on);
       }
       //after cards fade out, can click on new cards, but not before
       setTimeout(reset_mem_value, 1100);
@@ -197,7 +190,6 @@ var check_if_match = function(){
     }else {
       changeTurn();
       game_on = "false";
-      console.log(game_on);
 
       //flip mismatches back over after a second
     var flip_cards = function(){
@@ -206,7 +198,6 @@ var check_if_match = function(){
       memory_value[1].addClass('back');
       memory_value = [];
       game_on = "true";
-      console.log(game_on);
     };
     setTimeout(flip_cards, 1000);
       tiles_flipped = 0;
@@ -216,9 +207,24 @@ var check_if_match = function(){
 
 
 //click functions for each card
+// $('#a').click(function(){
+//   //can't click on card if false
+//   if (game_on === "false"){
+//     return;
+//   }else{
+//     //changes back of card to picture determined from shuffled array
+//     $('#a').removeClass('back').addClass(arr[0]);
+//     memory_value.push($('#a'));
+//     tiles_flipped ++;
+//     check_if_match();
+//     check_current_player();
+//   }
+// });
+
 $('#a').click(function(){
   //can't click on card if false
-  if (game_on === "false"){
+  if (game_on === "false" || memory_value[0] === $('#a')){
+    alert("works");
     return;
   }else{
     //changes back of card to picture determined from shuffled array
@@ -227,11 +233,6 @@ $('#a').click(function(){
     tiles_flipped ++;
     check_if_match();
     check_current_player();
-
-
-    console.log(memory_value[0]);
-    console.log(tiles_flipped);
-
   }
 });
 
@@ -510,6 +511,22 @@ $('#x').click(function(){
     check_current_player();
   }
 });
+
+$('#winter').click(function(){
+  if ($('#snow').hasClass('snow')){
+    $('#snow').fadeOut(1500);
+
+    var snow_removal = function(){
+      $('#snow').removeClass('snow');
+    }
+
+    setTimeout(snow_removal, 1600);
+
+  }else{
+    $('#snow').addClass('snow').fadeTo(0,0).fadeTo(1500, 1);
+  }
+});
+
 
 $('#button').click(function(){
 
