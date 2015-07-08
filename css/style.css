@@ -20,9 +20,14 @@ caption{
   background-repeat: no-repeat;
 }
 
+.square:hover{
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=54274), pointer;
+}
+
 body{
   background-image: url("http://wallsfx.com/crush.php?src=/wallpapers/Game-of-Thrones-The-Wall-Jon-Snow-direwolf-Nights-Watch-_118035-34.jpg&h=400&w=640&zc=1");
-  background-size: cover;
+  background-size: 100%;
+  background-color: black;
   background-repeat: no-repeat;
   font-family: 'IM Fell English SC', serif;
   font-weight: bold;
@@ -38,6 +43,7 @@ body{
 
 table{
   margin: 0 auto;
+
 }
 
 .jon{
@@ -214,4 +220,110 @@ background-image: url("http://static.comicvine.com/uploads/original/11117/111170
   left: 20px;
   font-size: 100px;
   opacity: 0.9;
+}
+
+#play_again{
+  /*border: 2px solid black;*/
+  /*background-color: #000066;*/
+  height: 200px;
+  width: 450px;
+  margin: 0 auto;
+  border-radius: 20px;
+  position: relative;
+  bottom: 350px;
+  color: white;
+  font-size: 40px;
+  opacity: 0.7;
+  right: 50px;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+#winner_is{
+  text-align: center;
+  opacity: 0.8;
+}
+
+#winner{
+  text-align: center;
+  position: relative;
+  bottom: 40px;
+  opacity: 0.8;
+}
+
+#button{
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  left: 175px;
+  bottom: 80px;
+  height: 70px;
+  width: 100px;
+  border-radius: 10px;
+  opacity: 0.8;
+  font-size: 20px;
+  color: white;
+}
+
+#button:hover{
+  border: 2px solid red;
+}
+
+
+@media screen and (max-width: 1000px) {
+.square{
+  height: 150px;
+}
+
+table{
+  position: relative;
+  top: 30px;
+  width: 100%;
+}
+
+.player{
+font-size: 20px;
+}
+
+body{
+  background-size: 150%;
+  background-position: right;
+}
+
+#player1_Score{
+font-size: 50px;
+}
+
+#player2_Score{
+font-size: 50px;
+}
+
+
+caption{
+  font-size: 30px;
+}
+}
+
+@media screen and (max-width: 700px) {
+.square{
+  height: 100px;
+}
+table{
+ width: 100%;
+}
+}
+
+@media screen and (max-width: 580px) {
+.square{
+  height: 80px;
+}
+/*.square{
+  float: left;
+}*/
+table{
+  width: 100%;
+}
+
 }

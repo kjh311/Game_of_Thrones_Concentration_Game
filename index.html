@@ -5,20 +5,21 @@
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       <link href='http://fonts.googleapis.com/css?family=IM+Fell+English+SC' rel='stylesheet' type='text/css'>
+
     </head>
     <body>
 
 <!-- snow falling effect -->
-<div id="snow">
-</div>
+<!-- <div id="snow">
+</div> -->
 
 <!-- player ID and score -->
 <div id="player1" class="player"><p>  Player 1  </p>
-  <div id="player1_Score">0</div>
+  <div id="player1_Score"></div>
 </div>
 
 <div id="player2" class="player"><p>Player 2  </p>
-  <div id="player2_Score">0</div>
+  <div id="player2_Score"></div>
 </div>
 
 <!-- board -->
@@ -59,10 +60,15 @@
 
 
 
-
+  <div id="play_again" class="hidden">
+    <p id="winner_is">Winner is:</p>
+    <p id="winner"></p>
+    <button id="button">Play Again?</button>
+  </div>
 
 
 
       <script src='js/main.js'></script>
+
     </body>
   </html>

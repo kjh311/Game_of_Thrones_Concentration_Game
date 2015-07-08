@@ -108,27 +108,47 @@ var check_if_match = function(){
 
         //Determines Winner after board is cleared.,
         if(player1_Score + player2_Score === 12 && player1_Score > player2_Score){
-          alert("player 1 wins!!");
+
+          //reveals winner and play again button
+          $('#play_again').removeClass("hidden");
+          $('#winner').html("Player 1!!!");
+          $('#play_again').fadeOut(0);
+          $('#play_again').fadeTo(1000, 1);
+
         }else if(player1_Score + player2_Score === 12 && player1_Score === player2_Score){
-          alert("Tie!!");
+          // alert("Tie!!");
+
+          $('#play_again').removeClass("hidden");
+          $('#winner').html("Tie!!");
+          $('#play_again').fadeOut(0);
+          $('#play_again').fadeTo(1000, 1);
         }
 
       } else {
         $('#player2_Score').html(player2_Score += 1);
 
         if(player1_Score + player2_Score === 12 && player2_Score > player1_Score){
-          alert("player 2 wins!!");
+          // alert("player 2 wins!!");
+
+
+          $('#play_again').removeClass("hidden");
+          $('#winner').html("Player 2!!!");
+          $('#play_again').fadeOut(0);
+          $('#play_again').fadeTo(1000, 1);
         }else if(player1_Score + player2_Score === 12 && player1_Score === player2_Score){
-          alert("Tie!!");
+          // alert("Tie!!");
+
+          $('#play_again').removeClass("hidden");
+          $('#winner').html("Tie!!");
+          $('#play_again').fadeOut(0);
+          $('#play_again').fadeTo(1000, 1);
         }
 
       }
 
-
       //fades out matches
       memory_value[0].fadeTo(1000, 0);
       memory_value[1].fadeTo(1000, 0);
-
 
       //the 2 cards turned over get added to array, then array is erased
       var reset_mem_value = function(){
@@ -145,12 +165,12 @@ var check_if_match = function(){
       //if no match
     }else {
       changeTurn();
-
       game_on = "false";
       console.log(game_on);
 
       //flip mismatches back over after a second
     var flip_cards = function(){
+
       memory_value[0].addClass('back');
       memory_value[1].addClass('back');
       memory_value = [];
@@ -163,6 +183,7 @@ var check_if_match = function(){
   }
 }
 
+
 //click functions for each card
 $('#a').click(function(){
   //can't click on card if false
@@ -171,6 +192,7 @@ $('#a').click(function(){
   }else{
     //changes back of card to picture determined from shuffled array
     $('#a').removeClass('back').addClass(arr[0]);
+
     memory_value.push($('#a'));
     tiles_flipped ++;
     check_if_match();
@@ -454,7 +476,9 @@ $('#x').click(function(){
   }
 });
 
-
+$('#button').click(function(){
+location.reload();
+});
 });
 
 
