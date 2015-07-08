@@ -4,6 +4,8 @@
 //jQuery code gets run inside
 $( document ).ready(function() {
 
+  //fade in
+  $('*').fadeTo(0, 0).fadeTo(1500, 1);
 
   //array that holds the various classes
   var arr = ["jon", "jon2", "joff", "joff2", "cercei", "cercei2", "drogo", "drogo2", "selmy", "selmy2", "melisandre", "melisandre2", "dany", "dany2", "tyrion", "tyrion2", "sansa", "sansa2", "ned", "ned2", "jamie", "jamie2", "jorah", "jorah2"];
@@ -22,6 +24,23 @@ $( document ).ready(function() {
   //start the game with the ability to click on cards
   var game_on = "true";
 
+
+  //randomize background image
+  function getRandom() {
+  var random = Math.random();
+  if (random < 0.2){
+    $('body').addClass('background1');
+  }else if (random < 0.4){
+    $('body').addClass('background2');
+  }else if (random < 0.6){
+    $('body').addClass('background3');
+  }else if (random < 0.8){
+    $('body').addClass('background4');
+  }else {
+    $('body').addClass('background5');
+  }
+}
+getRandom();
 
 //function that shuffles the array
   function shuffle(array) {
@@ -42,6 +61,16 @@ $( document ).ready(function() {
 shuffle(arr);
 // alert(arr);
 
+//don't want to click on same card twice
+var add_to_tiles_flipped = function(){
+  if (memory_value[0] === memory_value[1]){
+    memory_value.pop();
+    return;
+  }else {
+    tiles_flipped ++;
+  }
+}
+
 //changes player turn
 function changeTurn() {
   if (current_player == 'player1') {
@@ -56,6 +85,8 @@ function changeTurn() {
 
 //checks whose turn it is
 var check_current_player = function(){
+
+
   if (current_player === "player1"){
     $('#player1 p').addClass('player1Current');
 
@@ -97,7 +128,7 @@ var check_if_match = function(){
 
     //checks to see if two cards match
     //I'm sure there's some way to make this shorter somehow
-      if (memory_value[0].hasClass('jon') && memory_value[1].hasClass('jon2') || memory_value[0].hasClass('jon2') && memory_value[1].hasClass('jon') || memory_value[0].hasClass('joff') && memory_value[1].hasClass('joff2') || memory_value[0].hasClass('joff2') && memory_value[1].hasClass('joff') || memory_value[0].hasClass('cercei') && memory_value[1].hasClass('cercei2') || memory_value[0].hasClass('cercei2') && memory_value[1].hasClass('cercei') || memory_value[0].hasClass('drogo') && memory_value[1].hasClass('drogo2') || memory_value[0].hasClass('drogo2') && memory_value[1].hasClass('drogo') || memory_value[0].hasClass('selmy') && memory_value[1].hasClass('selmy2') || memory_value[0].hasClass('selmy2') && memory_value[1].hasClass('selmy') || memory_value[0].hasClass('melisandre') && memory_value[1].hasClass('melisandre2') || memory_value[0].hasClass('melisandre2') && memory_value[1].hasClass('melisandre') || memory_value[0].hasClass('dany') && memory_value[1].hasClass('dany2') || memory_value[0].hasClass('dany2') && memory_value[1].hasClass('dany') || memory_value[0].hasClass('tyrion') && memory_value[1].hasClass('tyrion2') || memory_value[0].hasClass('tyrion2') && memory_value[1].hasClass('tyrion') || memory_value[0].hasClass('sansa') && memory_value[1].hasClass('sansa2') || memory_value[0].hasClass('sansa2') && memory_value[1].hasClass('sansa') || memory_value[0].hasClass('ned') && memory_value[1].hasClass('ned2') || memory_value[0].hasClass('ned2') && memory_value[1].hasClass('ned') || memory_value[0].hasClass('jamie') && memory_value[1].hasClass('jamie2') || memory_value[0].hasClass('jamie2') && memory_value[1].hasClass('jamie') || memory_value[0].hasClass('jorah') && memory_value[1].hasClass('jorah2' || memory_value[0].hasClass('jorah2') && memory_value[1].hasClass('jorah')))  {
+      if (memory_value[0].hasClass('jon') && memory_value[1].hasClass('jon2') || memory_value[0].hasClass('jon2') && memory_value[1].hasClass('jon') || memory_value[0].hasClass('joff') && memory_value[1].hasClass('joff2') || memory_value[0].hasClass('joff2') && memory_value[1].hasClass('joff') || memory_value[0].hasClass('cercei') && memory_value[1].hasClass('cercei2') || memory_value[0].hasClass('cercei2') && memory_value[1].hasClass('cercei') || memory_value[0].hasClass('drogo') && memory_value[1].hasClass('drogo2') || memory_value[0].hasClass('drogo2') && memory_value[1].hasClass('drogo') || memory_value[0].hasClass('selmy') && memory_value[1].hasClass('selmy2') || memory_value[0].hasClass('selmy2') && memory_value[1].hasClass('selmy') || memory_value[0].hasClass('melisandre') && memory_value[1].hasClass('melisandre2') || memory_value[0].hasClass('melisandre2') && memory_value[1].hasClass('melisandre') || memory_value[0].hasClass('dany') && memory_value[1].hasClass('dany2') || memory_value[0].hasClass('dany2') && memory_value[1].hasClass('dany') || memory_value[0].hasClass('tyrion') && memory_value[1].hasClass('tyrion2') || memory_value[0].hasClass('tyrion2') && memory_value[1].hasClass('tyrion') || memory_value[0].hasClass('sansa') && memory_value[1].hasClass('sansa2') || memory_value[0].hasClass('sansa2') && memory_value[1].hasClass('sansa') || memory_value[0].hasClass('ned') && memory_value[1].hasClass('ned2') || memory_value[0].hasClass('ned2') && memory_value[1].hasClass('ned') || memory_value[0].hasClass('jamie') && memory_value[1].hasClass('jamie2') || memory_value[0].hasClass('jamie2') && memory_value[1].hasClass('jamie') || memory_value[0].hasClass('jorah') && memory_value[1].hasClass('jorah2') || (memory_value[0].hasClass('jorah2') && memory_value[1].hasClass('jorah')))  {
 
       //turns off the ability to click on cards while two mismatches are turned upright
       game_on = "false";
@@ -192,11 +223,15 @@ $('#a').click(function(){
   }else{
     //changes back of card to picture determined from shuffled array
     $('#a').removeClass('back').addClass(arr[0]);
-
     memory_value.push($('#a'));
     tiles_flipped ++;
     check_if_match();
     check_current_player();
+
+
+    console.log(memory_value[0]);
+    console.log(tiles_flipped);
+
   }
 });
 
@@ -477,7 +512,15 @@ $('#x').click(function(){
 });
 
 $('#button').click(function(){
+
+//fade out
+$('*').fadeTo(1000, 0);
+
+var fade_out = function(){
+  //reload page
 location.reload();
+}
+setTimeout(fade_out, 1000);
 });
 });
 

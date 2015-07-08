@@ -25,14 +25,19 @@
 ##ICEBOX: Extra Features
 
 - responsive design
+###DONE!!
 
 - sword cursor
+###DONE!!
+
+- fade in and fade out
 ###DONE!!
 
 - "Play Again" buttons appears when game is finished
 ###DONE!!
 
 - background changes randomly
+###DONE!!
 
 - a dradon card can be played that resuffles all the cards
 

@@ -4,6 +4,9 @@ caption{
   font-size: 40px;
   font-family: 'IM Fell English SC', serif;
   font-style: bold;
+  /*background-color: black;*/
+  /*width: 700px;
+  border-radius: 20px;*/
 }
 
 .square{
@@ -25,12 +28,36 @@ caption{
 }
 
 body{
-  background-image: url("http://wallsfx.com/crush.php?src=/wallpapers/Game-of-Thrones-The-Wall-Jon-Snow-direwolf-Nights-Watch-_118035-34.jpg&h=400&w=640&zc=1");
   background-size: 100%;
   background-color: black;
   background-repeat: no-repeat;
   font-family: 'IM Fell English SC', serif;
   font-weight: bold;
+  text-shadow:
+   -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+     2px 2px 0 #000;
+}
+
+.background1{
+  background-image: url('http://www.firsthdwallpapers.com/uploads/2013/05/game-of-thrones-wallpaper.jpg');
+}
+
+.background2{
+  background-image: url('http://cdn.wallwuzz.com/uploads/game-picture-wallwuzz-hd-wallpaper-23341.jpg');
+}
+
+.background3{
+  background-image: url('http://wallsfx.com/crush.php?src=/wallpapers/Game-of-Thrones-The-Wall-Jon-Snow-direwolf-Nights-Watch-_118035-34.jpg&h=400&w=640&zc=1');
+}
+
+.background4{
+  background-image: url('http://pre02.deviantart.net/67ab/th/pre/f/2011/058/1/7/game_of_thrones_by_en_taiho-d3786x4.jpg');
+}
+
+.background5{
+  background-image: url('http://www.ambwallpapers.com/wp-content/uploads/2015/02/game_of_thrones_hd.jpg');
 }
 
 .player1_current {
@@ -143,7 +170,7 @@ background-image: url("http://static.comicvine.com/uploads/original/11117/111170
 }
 
 .back{
-  background-image: url("http://rivista-cdn.postcity.com/images/2012-03-March/gameofthrones1.jpg?ver=1331230262");
+  background-image: url("http://img2.wikia.nocookie.net/__cb20110408162149/gameofthrones/images/0/0b/House_Lannister_banner.jpg");
 }
 
 /*snow falling effect*/
@@ -187,25 +214,42 @@ background-image: url("http://static.comicvine.com/uploads/original/11117/111170
   color: white;
   opacity: 0.9;
   font-size: 30px;
+
+
 }
 
 #player1{
   float: left;
+
 }
 
 #player2{
   float: right;
   display: relative;
+
+}
+
+.player_name{
+  background-color: black;
+  border-radius: 20px;
+  padding: 5px;
+  border: 3px solid black;
 }
 
 .player1Current{
   background-color: #3399FF;
   opacity: 0.9;
+  /*padding: 5px;*/
+  border-radius: 20px;
+  border: 3px solid black;
 }
 
 .player2Current{
   background-color: #990099;
   opacity: 0.9;
+  /*padding: 5px;*/
+  border-radius: 20px;
+  border: 3px solid black;
 }
 
 #player1_Score{
@@ -293,11 +337,11 @@ body{
 }
 
 #player1_Score{
-font-size: 50px;
+  font-size: 50px;
 }
 
 #player2_Score{
-font-size: 50px;
+  font-size: 50px;
 }
 
 
