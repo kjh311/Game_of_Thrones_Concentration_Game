@@ -4,18 +4,18 @@ Possible "User Stories"
 
 ##MVP: Minimum Viable Product
 
-- cards are placed randomly based on math (DONE!!)
+- cards are placed randomly based on math ###(DONE!!)
 
-- Card Pairs with various GOT characters (DONE!!)
+- Card Pairs with various GOT characters ###(DONE!!)
 
-- each pair is a point that gets added to player's score (DONE!!)
+- each pair is a point that gets added to player's score ###(DONE!!)
 
 - cards flip over for at least a second,
-if a match is sucessfully found match disapears (DONE!!)
+if a match is sucessfully found match disapears ###(DONE!!)
 
-- 2 players, switches turns and lets user know whose turn it is (DONE!!)
+- 2 players, switches turns and lets user know whose turn it is ###(DONE!!)
 
-- Player with most points wins or a tie is determined (DONE!!)
+- Player with most points wins or a tie is determined ###(DONE!!)
 
 ##ICEBOX: Extra Features
 
@@ -31,19 +31,20 @@ if a match is sucessfully found match disapears (DONE!!)
 
 - After each pair is found a Quote / piece of info of each character is displayed / sound effect of that character
 
-- hover psuedo selector over each card that changes with player 1 or player 2 (DONE!!)
+- hover psuedo selector over each card that changes with player 1 or player 2 ###(DONE!!)
 
 - sound effects play when cards flip / a correct pair is found / an incorrect pair is found / when cards are dealt / when cards
 
-- after all the cards are revealed the background is revealed. (DONE!!)
+- after all the cards are revealed the background is revealed. ###(DONE!!)
 
 - cards flip over with a jquery animation
 
 ##Working on bugs:
 
-- bug where if 2 cards are face up and user clicks on another before the first 2 disapear, the 3rd won't dissapear (FIXED!!)
+- bug where if 2 cards are face up and user clicks on another before the first 2 disapear, the 3rd won't dissapear ###(FIXED!!)
 
-- bug where if you click on the same picture twice the computer thinks a match is found (FIXED!!), but now if user clicks on same image twice it switches turns.
+- bug where if you click on the same picture twice the computer thinks a match is found ###(FIXED!!)
+but now if user clicks on same image twice it switches turns.
 
 - need to download each image, run them trough Photoshop *Save for Web* so the filesize is less
 
