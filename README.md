@@ -15,11 +15,13 @@ if a match is sucessfully found match disapears (DONE!!)
 
 - 2 players, switches turns and lets user know whose turn it is (DONE!!)
 
-- Player with most points wins
+- Player with most points wins or a tie is determined (DONE!!)
 
 ##ICEBOX: Extra Features
 
 - a dradon card can be played that resuffles all the cards
+
+- after board is cleared a RESET button appears
 
 - Countdown timer shuffles the remaining cards / or number of wrong picks / or after each wrong move a random pair of cards is moved with the cards moving visually
 
@@ -41,4 +43,8 @@ if a match is sucessfully found match disapears (DONE!!)
 
 - bug where if 2 cards are face up and user clicks on another before the first 2 disapear, the 3rd won't dissapear (FIXED!!)
 
-- bug where if you click on the same picture twice the computer thinks a match is found
+- bug where if you click on the same picture twice the computer thinks a match is found (FIXED!!), but now if user clicks on same image twice it switches turns.
+
+- need to download each image, run them trough Photoshop *Save for Web* so the filesize is less
+
+- should figure out event bubbling so I don't have so many functions
