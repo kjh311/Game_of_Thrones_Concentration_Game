@@ -24,6 +24,7 @@ caption{
 
 #winter:hover{
   border: 2px outset red;
+  box-shadow: 0px 0px 25px red;
 }
 
 #winter_is_coming{
@@ -86,109 +87,63 @@ body{
 
 .player1_current {
   border: 5px ridge #3399FF;
+  box-shadow: 0px 0px 25px #3399FF;
 }
 
 .player2_current {
   border: 5px ridge #990099;
+  box-shadow: 0px 0px 25px #990099;
 }
 
 table{
   margin: 0 auto;
 }
 
-.jon{
+.jon, .jon2{
   background-image: url("http://img2.wikia.nocookie.net/__cb20150512181258/gameofthrones/images/9/95/Jon_Snow_(S05E05).jpg");
 }
 
-.jon2{
-  background-image: url("http://img2.wikia.nocookie.net/__cb20150512181258/gameofthrones/images/9/95/Jon_Snow_(S05E05).jpg");
-}
-
-.joff{
+.joff, .joff2{
   background-image: url("http://img4.wikia.nocookie.net/__cb20120703113312/gameofthrones/images/0/0b/Joffrey_HBO_Promo_Shot_2012.jpg");
 }
 
-.joff2{
-  background-image: url("http://img4.wikia.nocookie.net/__cb20120703113312/gameofthrones/images/0/0b/Joffrey_HBO_Promo_Shot_2012.jpg");
+.cercei, .cercei2{
+  background-image: url("http://img3.wikia.nocookie.net/__cb20120316191120/gameofthrones/images/c/c2/CerseiEW.png");
 }
 
-.cercei{
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHy5WBLbuWU3GJ8jdJn--HzVoEDk74KosbDe4NWjAxhe0upHZv2g");
+.drogo, .drogo2{
+  background-image: url("http://25.media.tumblr.com/f76a8989a922881a86843d344b84a3aa/tumblr_mjzry2srOL1qago3fo1_1280.jpg");
 }
 
-.cercei2{
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHy5WBLbuWU3GJ8jdJn--HzVoEDk74KosbDe4NWjAxhe0upHZv2g");
-}
-
-.drogo{
-  background-image: url("http://img4.wikia.nocookie.net/__cb20110626031733/gameofthrones/images/1/1f/Drogo_1x01b.jpg");
-}
-
-.drogo2{
-  background-image: url("http://img4.wikia.nocookie.net/__cb20110626031733/gameofthrones/images/1/1f/Drogo_1x01b.jpg");
-}
-
-.selmy{
+.selmy, .selmy2{
   background-image: url("http://static.comicvine.com/uploads/original/11117/111170099/3979483-9410200601-31981.jpg");
 }
 
-.selmy2{
-  background-image: url("http://static.comicvine.com/uploads/original/11117/111170099/3979483-9410200601-31981.jpg");
+.melisandre, .melisandre2{
+  background-image: url("http://img14.deviantart.net/a06a/i/2013/133/7/3/the_red_priestess_by_drkujo-d654iuf.jpg");
 }
 
-.melisandre{
-  background-image: url("https://s-media-cache-ak0.pinimg.com/236x/be/da/11/beda115fced505030ca36ebae388440b.jpg");
-}
-
-.melisandre2{
-  background-image: url("https://s-media-cache-ak0.pinimg.com/236x/be/da/11/beda115fced505030ca36ebae388440b.jpg");
-}
-
-.dany{
+.dany, .dany2{
   background-image: url("https://40.media.tumblr.com/2895c2877842762fb091b982ef7f77d6/tumblr_npn8t9sk141tc5piho1_500.png");
 }
 
-.dany2{
-  background-image: url("https://40.media.tumblr.com/2895c2877842762fb091b982ef7f77d6/tumblr_npn8t9sk141tc5piho1_500.png");
-}
-
-.tyrion{
+.tyrion, .tyrion2{
   background-image: url("http://img2.wikia.nocookie.net/__cb20140623111310/gameofthrones/images/5/51/Tyrion_Lannister_Profile.jpg");
 }
 
-.tyrion2{
-  background-image: url("http://img2.wikia.nocookie.net/__cb20140623111310/gameofthrones/images/5/51/Tyrion_Lannister_Profile.jpg");
-}
-
-.theon{
+.theon, .theon2{
   background-image: url("http://images5.fanpop.com/image/photos/28900000/got-game-of-thrones-28960534-500-646.png");
 }
 
-.theon2{
-  background-image: url("http://images5.fanpop.com/image/photos/28900000/got-game-of-thrones-28960534-500-646.png");
+.ned, .ned2{
+  background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQL9DtCA_OAWAeX3BXJP7ISlO30KtbTCoIwm67KH_N4Mv4HuBCd");
 }
 
-.ned{
-  background-image: url("http://img3.wikia.nocookie.net/__cb20110626030942/gameofthrones/images/9/9c/EddardStark.jpg");
-}
-
-.ned2{
-  background-image: url("http://img3.wikia.nocookie.net/__cb20110626030942/gameofthrones/images/9/9c/EddardStark.jpg");
-}
-
-.jamie{
+.jamie, .jamie2{
   background-image: url("https://upload.wikimedia.org/wikipedia/en/b/b5/JaimeLannister.jpg");
 }
 
-.jamie2{
-  background-image: url("https://upload.wikimedia.org/wikipedia/en/b/b5/JaimeLannister.jpg");
-}
-
-.jorah{
-  background-image: url("http://36.media.tumblr.com/tumblr_m55cyjhxhl1r1pxrwo1_500.jpg");
-}
-
-.jorah2{
+.jorah, .jorah2{
   background-image: url("http://36.media.tumblr.com/tumblr_m55cyjhxhl1r1pxrwo1_500.jpg");
 }
 
@@ -301,7 +256,7 @@ table{
   color: white;
   font-size: 40px;
   opacity: 0.7;
-  right: 50px;
+  /*right: 50px;*/
 }
 
 .hidden{
@@ -310,7 +265,7 @@ table{
 
 #winner_is{
   text-align: center;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 #winner{
@@ -324,20 +279,22 @@ table{
   text-align: center;
   margin: 0 auto;
   position: relative;
-  left: 175px;
+  left: 140px;
   bottom: 80px;
   height: 90px;
-  width: 130px;
+  width: 170px;
   border-radius: 10px;
   opacity: 0.8;
-  font-size: 20px;
+  font-size: 25px;
   color: white;
-  background-color: black;
+  background-color: rgba(0,0,0, 0.2);
   font-family: 'IM Fell English SC', serif;
+
 }
 
 #button:hover{
   border: 2px outset red;
+  box-shadow: 0px 0px 25px red;
 }
 
 @media screen and (max-width: 1000px) {
@@ -361,7 +318,7 @@ font-size: 20px;
 }
 
 body{
-  background-size: 150%;
+  background-size: contain;
   background-position: right;
 }
 

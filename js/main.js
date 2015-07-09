@@ -1,5 +1,5 @@
 
-  console.log('activate framework!');
+  console.log('Game Working!');
 
 //jQuery code gets run inside
 $( document ).ready(function() {
@@ -28,7 +28,7 @@ $( document ).ready(function() {
 
 
   //randomize background image
-  function getRandom() {
+  function random_background() {
   var random = Math.random();
   if (random < 0.2){
     $('body').addClass('background1');
@@ -42,7 +42,7 @@ $( document ).ready(function() {
     $('body').addClass('background5');
   }
 }
-getRandom();
+random_background();
 
 //function that shuffles the array
   function shuffle(array) {
@@ -63,15 +63,6 @@ getRandom();
 shuffle(arr);
 // alert(arr)
 
-//don't want to click on same card twice
-// var add_to_tiles_flipped = function(){
-//   if (memory_value[0] === memory_value[1]){
-//     memory_value.pop();
-//     return;
-//   }else {
-//     tiles_flipped ++;
-//   }
-// }
 
 //changes player turn
 function changeTurn() {
@@ -87,6 +78,7 @@ function changeTurn() {
 
 //checks whose turn it is
 var check_current_player = function(){
+
 
   if (current_player === "player1"){
     $('#player1 p').addClass('player1Current');
@@ -148,14 +140,12 @@ var check_if_match = function(){
           $('#play_again').fadeTo(1000, 1);
 
         }else if(player1_Score + player2_Score === 12 && player1_Score === player2_Score){
-          // alert("Tie!!");
 
           $('#play_again').removeClass("hidden");
           $('#winner').html("Tie!!");
           $('#play_again').fadeOut(0);
           $('#play_again').fadeTo(1000, 1);
         }
-
       } else {
         $('#player2_Score').html(player2_Score += 1);
 
@@ -174,8 +164,8 @@ var check_if_match = function(){
       }
 
       //fades out matches
-      memory_value[0].fadeTo(1000, 0);
-      memory_value[1].fadeTo(1000, 0);
+      memory_value[0].fadeTo(2000, 0);
+      memory_value[1].fadeTo(2000, 0);
 
       //the 2 cards turned over get added to array, then array is erased
       var reset_mem_value = function(){
@@ -208,39 +198,26 @@ var check_if_match = function(){
 }
 
 
-// click functions for each card
-// $('#a').click(function(){
-//   //can't click on card if false
-//   if (game_on === "false"){
-//     return;
-//   }else{
-//     //changes back of card to picture determined from shuffled array
-//     $('#a').removeClass('back').addClass(arr[0]);
-//     memory_value.push($('#a'));
-//     tiles_flipped ++;
-//     check_if_match();
-//     check_current_player();
-//     console.log(memory_value.indexOf($('#a'));
-//   }
-// });
-
 $('#a').click(function(){
-  // console.log(this.innerHTML);
   //can't click on card if false
-  // if (game_on === "false"){
-  // if (game_on === "false" || memory_value.indexOf($('#a') !== -1)){
-  if (game_on === "false" || memory_value.indexOf('#a') !== -1){
-    alert("You already clicked on this card, bro!!!");
+  if (game_on === "false"){
     return;
   }else{
     //changes back of card to picture determined from shuffled array
     $('#a').removeClass('back').addClass(arr[0]);
     memory_value.push($('#a'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
-    console.log(memory_value[0]);
+
+//don't want to be able to click on the same card twice
+    if (memory_value[0].hasClass(arr[0]) && memory_value[1].hasClass(arr[0])){
+      memory_value.pop();
+      tiles_flipped --;
+      return;
+    }else{
+      check_if_match();
+      check_current_player();
   }
+}
 });
 
 $('#b').click(function(){
@@ -250,9 +227,16 @@ $('#b').click(function(){
   $('#b').removeClass('back').addClass(arr[1]);
     memory_value.push($('#b'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[1]) && memory_value[1].hasClass(arr[1])){
+      memory_value.pop();
+      tiles_flipped --;
+      return;
+    }else{
+      check_if_match();
+      check_current_player();
   }
+}
 });
 
 $('#c').click(function(){
@@ -262,8 +246,14 @@ $('#c').click(function(){
     $('#c').removeClass('back').addClass(arr[2]);
     memory_value.push($('#c'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[2]) && memory_value[1].hasClass(arr[2])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -274,8 +264,14 @@ $('#d').click(function(){
     $('#d').removeClass('back').addClass(arr[3]);
     memory_value.push($('#d'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[3]) && memory_value[1].hasClass(arr[3])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -286,8 +282,14 @@ $('#e').click(function(){
     $('#e').removeClass('back').addClass(arr[4]);
     memory_value.push($('#e'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[4]) && memory_value[1].hasClass(arr[4])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -298,8 +300,14 @@ $('#f').click(function(){
     $('#f').removeClass('back').addClass(arr[5]);
     memory_value.push($('#f'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[5]) && memory_value[1].hasClass(arr[5])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -310,8 +318,14 @@ $('#g').click(function(){
     $('#g').removeClass('back').addClass(arr[6]);
     memory_value.push($('#g'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[6]) && memory_value[1].hasClass(arr[6])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -322,8 +336,14 @@ $('#h').click(function(){
     $('#h').removeClass('back').addClass(arr[7]);
     memory_value.push($('#h'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[7]) && memory_value[1].hasClass(arr[7])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -334,8 +354,14 @@ $('#i').click(function(){
     $('#i').removeClass('back').addClass(arr[8]);
     memory_value.push($('#i'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[8]) && memory_value[1].hasClass(arr[8])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -346,8 +372,14 @@ $('#j').click(function(){
     $('#j').removeClass('back').addClass(arr[9]);
     memory_value.push($('#j'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[9]) && memory_value[1].hasClass(arr[9])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -358,8 +390,14 @@ $('#k').click(function(){
     $('#k').removeClass('back').addClass(arr[10]);
     memory_value.push($('#k'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[10]) && memory_value[1].hasClass(arr[10])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -370,8 +408,14 @@ $('#k').click(function(){
     $('#l').removeClass('back').addClass(arr[11]);
     memory_value.push($('#l'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[11]) && memory_value[1].hasClass(arr[11])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -382,8 +426,14 @@ $('#m').click(function(){
     $('#m').removeClass('back').addClass(arr[12]);
     memory_value.push($('#m'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[12]) && memory_value[1].hasClass(arr[12])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -394,8 +444,14 @@ $('#n').click(function(){
     $('#n').removeClass('back').addClass(arr[13]);
     memory_value.push($('#n'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[13]) && memory_value[1].hasClass(arr[13])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -406,8 +462,14 @@ $('#o').click(function(){
     $('#o').removeClass('back').addClass(arr[14]);
     memory_value.push($('#o'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[14]) && memory_value[1].hasClass(arr[14])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -418,8 +480,14 @@ $('#p').click(function(){
     $('#p').removeClass('back').addClass(arr[15]);
     memory_value.push($('#p'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[15]) && memory_value[1].hasClass(arr[15])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -430,8 +498,14 @@ $('#q').click(function(){
     $('#q').removeClass('back').addClass(arr[16]);
     memory_value.push($('#q'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[16]) && memory_value[1].hasClass(arr[16])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -442,8 +516,14 @@ $('#r').click(function(){
     $('#r').removeClass('back').addClass(arr[17]);
     memory_value.push($('#r'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[17]) && memory_value[1].hasClass(arr[17])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -454,8 +534,14 @@ $('#s').click(function(){
     $('#s').removeClass('back').addClass(arr[18]);
     memory_value.push($('#s'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[18]) && memory_value[1].hasClass(arr[18])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -466,8 +552,14 @@ $('#t').click(function(){
     $('#t').removeClass('back').addClass(arr[19]);
     memory_value.push($('#t'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[19]) && memory_value[1].hasClass(arr[19])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -478,8 +570,14 @@ $('#u').click(function(){
     $('#u').removeClass('back').addClass(arr[20]);
     memory_value.push($('#u'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[20]) && memory_value[1].hasClass(arr[20])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -490,8 +588,14 @@ $('#v').click(function(){
     $('#v').removeClass('back').addClass(arr[21]);
     memory_value.push($('#v'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[21]) && memory_value[1].hasClass(arr[21])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -502,8 +606,14 @@ $('#w').click(function(){
     $('#w').removeClass('back').addClass(arr[22]);
     memory_value.push($('#w'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[22]) && memory_value[1].hasClass(arr[22])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 
@@ -514,8 +624,14 @@ $('#x').click(function(){
     $('#x').removeClass('back').addClass(arr[23]);
     memory_value.push($('#x'));
     tiles_flipped ++;
-    check_if_match();
-    check_current_player();
+
+    if (memory_value[0].hasClass(arr[23]) && memory_value[1].hasClass(arr[23])){
+      memory_value.pop();
+      tiles_flipped --;
+    }else{
+      check_if_match();
+      check_current_player();
+    }
   }
 });
 

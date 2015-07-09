@@ -9,6 +9,8 @@ Player with most points wins.
 
 ##MVP: Minimum Viable Product
 
+- Post website online
+
 - cards are placed randomly based on math
 ###DONE!!
 
@@ -75,6 +77,7 @@ Player with most points wins.
 - bug where if you click on the same picture twice the computer thinks a match is found
 ###FIXED!!
 but now if user clicks on same image twice it switches turns.
+###FIXED!!
 
 - need to download each image, run them trough Photoshop *Save for Web* so the filesize is less
 
