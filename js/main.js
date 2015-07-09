@@ -8,10 +8,10 @@ $( document ).ready(function() {
   $('*').fadeTo(0, 0).fadeTo(1500, 1);
 
   //array that holds the various classes
-  var arr = ["jon", "jon2", "joff", "joff2", "cercei", "cercei2", "drogo", "drogo2", "selmy", "selmy2", "melisandre", "melisandre2", "dany", "dany2", "tyrion", "tyrion2", "sansa", "sansa2", "ned", "ned2", "jamie", "jamie2", "jorah", "jorah2"];
+  var arr = ["jon", "jon2", "joff", "joff2", "cercei", "cercei2", "drogo", "drogo2", "selmy", "selmy2", "melisandre", "melisandre2", "dany", "dany2", "tyrion", "tyrion2", "theon", "theon2", "ned", "ned2", "jamie", "jamie2", "jorah", "jorah2"];
 
   //empty array that the 2 flipped cards get added to temporarily
-  var memory_value = [];
+   memory_value = [];
 
   var tiles_flipped = 0;
 
@@ -20,6 +20,8 @@ $( document ).ready(function() {
 
   var player1_Score = 0;
   var player2_Score = 0;
+  $('#player1_Score').html(0);
+  $('#player2_Score').html(0);
 
   //start the game with the ability to click on cards
   var game_on = "true";
@@ -127,7 +129,7 @@ var check_if_match = function(){
 
     //checks to see if two cards match
     //I'm sure there's some way to make this shorter somehow
-      if (memory_value[0].hasClass('jon') && memory_value[1].hasClass('jon2') || memory_value[0].hasClass('jon2') && memory_value[1].hasClass('jon') || memory_value[0].hasClass('joff') && memory_value[1].hasClass('joff2') || memory_value[0].hasClass('joff2') && memory_value[1].hasClass('joff') || memory_value[0].hasClass('cercei') && memory_value[1].hasClass('cercei2') || memory_value[0].hasClass('cercei2') && memory_value[1].hasClass('cercei') || memory_value[0].hasClass('drogo') && memory_value[1].hasClass('drogo2') || memory_value[0].hasClass('drogo2') && memory_value[1].hasClass('drogo') || memory_value[0].hasClass('selmy') && memory_value[1].hasClass('selmy2') || memory_value[0].hasClass('selmy2') && memory_value[1].hasClass('selmy') || memory_value[0].hasClass('melisandre') && memory_value[1].hasClass('melisandre2') || memory_value[0].hasClass('melisandre2') && memory_value[1].hasClass('melisandre') || memory_value[0].hasClass('dany') && memory_value[1].hasClass('dany2') || memory_value[0].hasClass('dany2') && memory_value[1].hasClass('dany') || memory_value[0].hasClass('tyrion') && memory_value[1].hasClass('tyrion2') || memory_value[0].hasClass('tyrion2') && memory_value[1].hasClass('tyrion') || memory_value[0].hasClass('sansa') && memory_value[1].hasClass('sansa2') || memory_value[0].hasClass('sansa2') && memory_value[1].hasClass('sansa') || memory_value[0].hasClass('ned') && memory_value[1].hasClass('ned2') || memory_value[0].hasClass('ned2') && memory_value[1].hasClass('ned') || memory_value[0].hasClass('jamie') && memory_value[1].hasClass('jamie2') || memory_value[0].hasClass('jamie2') && memory_value[1].hasClass('jamie') || memory_value[0].hasClass('jorah') && memory_value[1].hasClass('jorah2') || (memory_value[0].hasClass('jorah2') && memory_value[1].hasClass('jorah')))  {
+      if (memory_value[0].hasClass('jon') && memory_value[1].hasClass('jon2') || memory_value[0].hasClass('jon2') && memory_value[1].hasClass('jon') || memory_value[0].hasClass('joff') && memory_value[1].hasClass('joff2') || memory_value[0].hasClass('joff2') && memory_value[1].hasClass('joff') || memory_value[0].hasClass('cercei') && memory_value[1].hasClass('cercei2') || memory_value[0].hasClass('cercei2') && memory_value[1].hasClass('cercei') || memory_value[0].hasClass('drogo') && memory_value[1].hasClass('drogo2') || memory_value[0].hasClass('drogo2') && memory_value[1].hasClass('drogo') || memory_value[0].hasClass('selmy') && memory_value[1].hasClass('selmy2') || memory_value[0].hasClass('selmy2') && memory_value[1].hasClass('selmy') || memory_value[0].hasClass('melisandre') && memory_value[1].hasClass('melisandre2') || memory_value[0].hasClass('melisandre2') && memory_value[1].hasClass('melisandre') || memory_value[0].hasClass('dany') && memory_value[1].hasClass('dany2') || memory_value[0].hasClass('dany2') && memory_value[1].hasClass('dany') || memory_value[0].hasClass('tyrion') && memory_value[1].hasClass('tyrion2') || memory_value[0].hasClass('tyrion2') && memory_value[1].hasClass('tyrion') || memory_value[0].hasClass('theon') && memory_value[1].hasClass('theon2') || memory_value[0].hasClass('theon2') && memory_value[1].hasClass('theon') || memory_value[0].hasClass('ned') && memory_value[1].hasClass('ned2') || memory_value[0].hasClass('ned2') && memory_value[1].hasClass('ned') || memory_value[0].hasClass('jamie') && memory_value[1].hasClass('jamie2') || memory_value[0].hasClass('jamie2') && memory_value[1].hasClass('jamie') || memory_value[0].hasClass('jorah') && memory_value[1].hasClass('jorah2') || (memory_value[0].hasClass('jorah2') && memory_value[1].hasClass('jorah')))  {
 
       //turns off the ability to click on cards while two mismatches are turned upright
       game_on = "false";
@@ -206,7 +208,7 @@ var check_if_match = function(){
 }
 
 
-//click functions for each card
+// click functions for each card
 // $('#a').click(function(){
 //   //can't click on card if false
 //   if (game_on === "false"){
@@ -218,13 +220,17 @@ var check_if_match = function(){
 //     tiles_flipped ++;
 //     check_if_match();
 //     check_current_player();
+//     console.log(memory_value.indexOf($('#a'));
 //   }
 // });
 
 $('#a').click(function(){
+  // console.log(this.innerHTML);
   //can't click on card if false
-  if (game_on === "false" || memory_value[0] === $('#a')){
-    alert("works");
+  // if (game_on === "false"){
+  // if (game_on === "false" || memory_value.indexOf($('#a') !== -1)){
+  if (game_on === "false" || memory_value.indexOf('#a') !== -1){
+    alert("You already clicked on this card, bro!!!");
     return;
   }else{
     //changes back of card to picture determined from shuffled array
@@ -233,6 +239,7 @@ $('#a').click(function(){
     tiles_flipped ++;
     check_if_match();
     check_current_player();
+    console.log(memory_value[0]);
   }
 });
 
@@ -512,6 +519,7 @@ $('#x').click(function(){
   }
 });
 
+//make is snow
 $('#winter').click(function(){
   if ($('#snow').hasClass('snow')){
     $('#snow').fadeOut(1500);
@@ -520,7 +528,7 @@ $('#winter').click(function(){
       $('#snow').removeClass('snow');
     }
 
-    setTimeout(snow_removal, 1600);
+    setTimeout(snow_removal, 1500);
 
   }else{
     $('#snow').addClass('snow').fadeTo(0,0).fadeTo(1500, 1);
