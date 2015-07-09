@@ -131,39 +131,39 @@ var check_if_match = function(){
         $('#player1_Score').html(player1_Score += 1);
 
         //Determines Winner after board is cleared.,
-        if(player1_Score + player2_Score === 12 && player1_Score > player2_Score){
+        if(player1_Score + player2_Score === 1 && player1_Score > player2_Score){
 
           //reveals winner and play again button
           $('#play_again').removeClass("hidden");
           $('#winner').html("Player 1!!!");
           $('#play_again').fadeOut(0);
-          $('#play_again').fadeTo(1000, 1);
+          $('#play_again').fadeTo(2000, 1);
 
-        }else if(player1_Score + player2_Score === 12 && player1_Score === player2_Score){
+        }else if(player1_Score + player2_Score === 1 && player1_Score === player2_Score){
 
           $('#play_again').removeClass("hidden");
           $('#winner').html("Tie!!");
           $('#play_again').fadeOut(0);
-          $('#play_again').fadeTo(1000, 1);
+          $('#play_again').fadeTo(2000, 1);
         }
       } else {
         $('#player2_Score').html(player2_Score += 1);
 
-        if(player1_Score + player2_Score === 12 && player2_Score > player1_Score){
+        if(player1_Score + player2_Score === 1 && player2_Score > player1_Score){
 
           $('#play_again').removeClass("hidden");
           $('#winner').html("Player 2!!!");
           $('#play_again').fadeOut(0);
-          $('#play_again').fadeTo(1000, 1);
-        }else if(player1_Score + player2_Score === 12 && player1_Score === player2_Score){
+          $('#play_again').fadeTo(2000, 1);
+        }else if(player1_Score + player2_Score === 1 && player1_Score === player2_Score){
           $('#play_again').removeClass("hidden");
           $('#winner').html("Tie!!");
           $('#play_again').fadeOut(0);
-          $('#play_again').fadeTo(1000, 1);
+          $('#play_again').fadeTo(2000, 1);
         }
       }
 
-      //fades out matches
+      //fades out pairs
       memory_value[0].fadeTo(2000, 0);
       memory_value[1].fadeTo(2000, 0);
 
