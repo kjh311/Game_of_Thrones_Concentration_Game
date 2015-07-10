@@ -6,61 +6,66 @@ Find 2 matches get a point.
 Player with most points wins.
 
 ###Design:
-Mostly hard coded, should have used a For Loop instead of a click event listener on each card.
+Mostly hard coded, should have used a For Loop instead of a click event listener on every card. I don't really understand object-oriented programing yet, so the code is way longer than it needs to be. The cards don't start out with pictures attatched, instead each picture is assigned to a class, the classes are shuffled in an array, and when a card is clicked it adds the class of a specific index in the array to that card.
 
 ###Languages used:
-HTML, CSS, Javascript, Jquery
+HTML: Simple layout with basic table.  I should have used Divs instead to make responsive design easier and to enable the cards to "flip".
 
-##Getting Started:
-Fork the repo and open in your favorite text editor.
+CSS: Lots of layout design.  Images of cards and backgrounds assigned to classes.
 
-##Possible "User Stories"
+Javascript: Only used Javascript when I didn't know the Jquery shortcut.
+
+Jquery: Used almost exclusevly for DOM manipulation.
+
+###Getting Started:
+To play the game click the link above.  The game starts automatically, switching between players.  A "Play Again" button should appear after the game is over.  To edit the file, fork the repo and open in your favorite text editor.
+
 
 ##MVP: Minimum Viable Product
 
 - Post website online
-###DONE!!
+####DONE!!
 
 - cards are placed randomly based on math
-###DONE!!
+####DONE!!
 
 - Card Pairs with various GOT characters
-###DONE!!
+####DONE!!
 
 - each pair is a point that gets added to player's score
-###DONE!!
+####DONE!!
 
 - cards flip over for at least a second, if a match is sucessfully found match disapears
-###DONE!!
+####DONE!!
 
 - 2 players, switches turns and lets user know whose turn it is
-###DONE!!
+####DONE!!
 
 - Player with most points wins or a tie is determined
-###DONE!!
+####DONE!!
 
 ##ICEBOX: Extra Features
 
 - sword cursor
-###DONE!!
+####DONE!!
 
 - fade in and fade out
-###DONE!!
+####DONE!!
 
 - "Play Again" buttons appears when game is finished
-###DONE!!
+####DONE!!
 
 - background changes randomly
-###DONE!!
+####DONE!!
 
 - added button to make it snow and remove snow
-###DONE!!
+####DONE!!
 
 - hover psuedo selector over each card that changes with player 1 or player 2
-###DONE!!
+####DONE!!
 
 - after all the cards are revealed the background is revealed.
-###DONE!!
+####DONE!!
 
 - better responsive design, doesn't look very good on a phone, cards are too small.
 
@@ -87,12 +92,14 @@ Fork the repo and open in your favorite text editor.
 ##Working on bugs:
 
 - bug where if 2 cards are face up and user clicks on another before the first 2 disapear, the 3rd won't dissapear
-###FIXED!!
+####FIXED!!
 
 - bug where if you click on the same picture twice the computer thinks a match is found
-###FIXED!!
-s
+####FIXED!!
+
 but now if user clicks on same image twice it switches turns.
-###FIXED!!
+####FIXED!!
+
+- When the "snow effect" is on it can occasionally cause the game to not know when the game is over and may have to be reloaded.
 
 
