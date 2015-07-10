@@ -1,9 +1,15 @@
 #Game of Thrones Concentration / Memory Game
 
-##Rules:
+###Rules:
 Basic card matching memory game.
 Find 2 matches get a point.
 Player with most points wins.
+
+###Design: Mostly hard coded, should have used a For Loop instead of a click event listener on each card.
+
+###Languages used: HTML, CSS, Javascript, Jquery
+
+##Getting Started: Fork the repo and open in your favorite text editor.
 
 ##Possible "User Stories"
 
@@ -31,8 +37,7 @@ Player with most points wins.
 
 ##ICEBOX: Extra Features
 
-- responsive design
-###DONE!!
+- better responsive design, doesn't look very good on a phone, cards are too small.
 
 - sword cursor
 ###DONE!!
@@ -69,6 +74,12 @@ Player with most points wins.
 
 - cards flip over with a jquery animation
 
+- need to download each image, run them trough Photoshop *Save for Web* so the filesize is less
+
+- need to link each image to a saved image file instead of linking to online images
+
+- should figure out event bubbling so I don't have so many functions / such loooong functions
+
 ##Working on bugs:
 
 - bug where if 2 cards are face up and user clicks on another before the first 2 disapear, the 3rd won't dissapear
@@ -76,9 +87,8 @@ Player with most points wins.
 
 - bug where if you click on the same picture twice the computer thinks a match is found
 ###FIXED!!
+s
 but now if user clicks on same image twice it switches turns.
 ###FIXED!!
 
-- need to download each image, run them trough Photoshop *Save for Web* so the filesize is less
 
-- should figure out event bubbling so I don't have so many functions / such loooong functions

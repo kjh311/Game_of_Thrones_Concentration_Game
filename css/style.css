@@ -252,7 +252,7 @@ table{
   margin: 0 auto;
   border-radius: 20px;
   position: relative;
-  bottom: 350px;
+  bottom: 250px;
   color: white;
   font-size: 40px;
   opacity: 0.7;
@@ -308,7 +308,7 @@ table{
 
 #winter{
   position: relative;
-  bottom: 300px;
+  bottom: 280px;
 }
 
 .player{
@@ -328,6 +328,9 @@ body{
   font-size: 50px;
 }
 
+#play_again{
+  bottom: 400px;
+}
 
 caption{
   font-size: 30px;
@@ -341,6 +344,20 @@ caption{
 table{
  width: 100%;
 }
+
+caption{
+  font-size: 20px;
+}
+
+#player1_Score{
+  position: relative;
+  bottom: 10px;
+}
+
+#player2_Score{
+  position: relative;
+  bottom: 10px;
+}
 }
 
 @media screen and (max-width: 580px) {
@@ -348,12 +365,50 @@ table{
   height: 80px;
 }
 
+caption{
+  position: relative;
+  bottom: 30px;
+}
+
 #play_again{
   position: relative;
-  bottom: 120px;
+  bottom: 40px;
+}
+
+#winner_is{
+  font-size: 15px;
+  position: relative;
+  bottom: 50px;
+}
+
+#winner{
+  font-size: 15px;
+  position: relative;
+  bottom: 40px;
+}
+
+button{
+  font-size: 15px;
+  width: 20px;
+  height: 10px;
 }
 
 table{
   width: 100%;
+}
+
+#winter_is_coming{
+
+  position: relative;
+  bottom: 12px;
+  font-size: 15px;
+}
+
+#winter{
+  position: relative;
+  width: 170px;
+  height: 30px;
+  font-size: 10px;
+  bottom: 250px;
 }
 }

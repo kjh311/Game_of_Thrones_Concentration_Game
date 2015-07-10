@@ -173,7 +173,7 @@ var check_if_match = function(){
         game_on = "true";
       }
       //after cards fade out, can click on new cards, but not before
-      setTimeout(reset_mem_value, 1100);
+      setTimeout(reset_mem_value, 500);
 
       //number of cards that can be flipped gets reset
       tiles_flipped = 0;
