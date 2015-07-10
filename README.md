@@ -19,6 +19,7 @@ Fork the repo and open in your favorite text editor.
 ##MVP: Minimum Viable Product
 
 - Post website online
+###DONE!!
 
 - cards are placed randomly based on math
 ###DONE!!
@@ -40,8 +41,6 @@ Fork the repo and open in your favorite text editor.
 
 ##ICEBOX: Extra Features
 
-- better responsive design, doesn't look very good on a phone, cards are too small.
-
 - sword cursor
 ###DONE!!
 
@@ -57,6 +56,14 @@ Fork the repo and open in your favorite text editor.
 - added button to make it snow and remove snow
 ###DONE!!
 
+- hover psuedo selector over each card that changes with player 1 or player 2
+###DONE!!
+
+- after all the cards are revealed the background is revealed.
+###DONE!!
+
+- better responsive design, doesn't look very good on a phone, cards are too small.
+
 - a dradon card can be played that resuffles all the cards
 
 - Countdown timer shuffles the remaining cards / or number of wrong picks / or after each wrong move a random pair of cards is moved with the cards moving visually
@@ -67,13 +74,7 @@ Fork the repo and open in your favorite text editor.
 
 - After each pair is found a Quote / piece of info of each character is displayed / sound effect of that character
 
-- hover psuedo selector over each card that changes with player 1 or player 2
-###DONE!!
-
 - sound effects play when cards flip / a correct pair is found / an incorrect pair is found / when cards are dealt / when cards
-
-- after all the cards are revealed the background is revealed.
-###DONE!!
 
 - cards flip over with a jquery animation
 
