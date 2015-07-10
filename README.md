@@ -5,11 +5,14 @@ Basic card matching memory game.
 Find 2 matches get a point.
 Player with most points wins.
 
-###Design: Mostly hard coded, should have used a For Loop instead of a click event listener on each card.
+###Design:
+Mostly hard coded, should have used a For Loop instead of a click event listener on each card.
 
-###Languages used: HTML, CSS, Javascript, Jquery
+###Languages used:
+HTML, CSS, Javascript, Jquery
 
-##Getting Started: Fork the repo and open in your favorite text editor.
+##Getting Started:
+Fork the repo and open in your favorite text editor.
 
 ##Possible "User Stories"
 
