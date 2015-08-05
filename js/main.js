@@ -4,6 +4,9 @@
 //jQuery code gets run inside
 $( document ).ready(function() {
 
+  // http://www.zachstronaut.com/projects/rotate3di/#demos
+  $('#a').click(function () {$(this).rotate3Di('-=180', 1000);});
+
   //fade in
   $('*').fadeTo(0, 0).fadeTo(1500, 1);
 

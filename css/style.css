@@ -1,3 +1,76 @@
+.front{
+   background-image: url("http://img2.wikia.nocookie.net/__cb20110408162149/gameofthrones/images/0/0b/House_Lannister_banner.jpg");
+}
+
+#card_table{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flip-container {
+  perspective: 1000;
+  text-align: center;
+  margin: 0 auto;
+ /* margin-right: 0;*/
+  display: inline-block;
+  /*float: left;*/
+  margin: 20px;
+}
+  /* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+
+}
+
+.flip-container, .front, .back {
+  /*width: 320px;
+  height: 480px;*/
+   /*border: 5px ridge rgba(0,0,0,1);*/
+  height: 180px;
+  width: 110px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  /*margin: 0 auto;
+  text-align: center;*/
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+  background-size: 120%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-size: 135%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+  background-image: url("http://img2.wikia.nocookie.net/__cb20150512181258/gameofthrones/images/9/95/Jon_Snow_(S05E05).jpg");
+}
+
+
 caption{
   color: white;
   opacity: 0.8;
@@ -34,7 +107,7 @@ caption{
   font-size: 23px;
 }
 
-.square{
+.square, .flip{
   opacity: 0.7;
   border: 5px ridge rgba(0,0,0,1);
   height: 180px;
@@ -147,9 +220,9 @@ table{
   background-image: url("http://36.media.tumblr.com/tumblr_m55cyjhxhl1r1pxrwo1_500.jpg");
 }
 
-.back{
+/*.back{
   background-image: url("http://img2.wikia.nocookie.net/__cb20110408162149/gameofthrones/images/0/0b/House_Lannister_banner.jpg");
-}
+}*/
 
 /*snow falling effect*/
 .snow{
