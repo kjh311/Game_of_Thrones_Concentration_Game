@@ -4,6 +4,9 @@
 //jQuery code gets run inside
 $( document ).ready(function() {
 
+  // http://www.zachstronaut.com/projects/rotate3di/#demos
+
+
   //fade in
   $('*').fadeTo(0, 0).fadeTo(1500, 1);
 
@@ -196,7 +199,10 @@ var check_if_match = function(){
     }
   }
 }
+// http://www.zachstronaut.com/projects/rotate3di/#demos
+ // $('#a').click(function () {$(this).rotate3Di('-=180', 1000);});
 
+ // $('#a').rotate3Di(180, 3000);
 
 $('#a').click(function(){
   //can't click on card if false
@@ -204,7 +210,13 @@ $('#a').click(function(){
     return;
   }else{
     //changes back of card to picture determined from shuffled array
-    $('#a').removeClass('back').addClass(arr[0]);
+
+    $('#a').addClass('first_rotate')
+      .delay(100)
+      .queue(function(){
+      $(this).removeClass('back').addClass(arr[0]).addClass('second_rotate')
+    });
+
     memory_value.push($('#a'));
     tiles_flipped ++;
 

@@ -1,3 +1,15 @@
+.first_rotate{
+  transform: rotateY(90deg);
+  -webkit-transition: -webkit-transform .1s ease;
+}
+
+.second_rotate{
+  transform: rotateY(0deg);
+  -webkit-transition: -webkit-transform .1s ease;
+}
+
+/*TEST*/
+
 caption{
   color: white;
   opacity: 0.8;
