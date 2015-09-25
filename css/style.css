@@ -1,12 +1,4 @@
-.first_rotate{
-  transform: rotateY(90deg);
-  -webkit-transition: -webkit-transform .1s ease;
-}
 
-.second_rotate{
-  transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform .1s ease;
-}
 
 /*TEST*/
 
@@ -77,25 +69,31 @@ body{
      2px 2px 0 #000;
 }
 
+/*ned*/
 .background1{
   background-image: url('http://www.firsthdwallpapers.com/uploads/2013/05/game-of-thrones-wallpaper.jpg');
 }
 
+/*targaryan shield*/
 .background2{
-  background-image: url('http://cdn.wallwuzz.com/uploads/game-picture-wallwuzz-hd-wallpaper-23341.jpg');
+  background-image: url('http://k36.kn3.net/9/1/E/2/3/E/A69.jpg');
 }
 
+/*jon and ghost*/
 .background3{
-  background-image: url('http://wallsfx.com/crush.php?src=/wallpapers/Game-of-Thrones-The-Wall-Jon-Snow-direwolf-Nights-Watch-_118035-34.jpg&h=400&w=640&zc=1');
+  background-image: url('http://s1.bwallpapers.com/wallpapers/2014/01/16/game-of-thrones-jon-snow_091957.jpg');
 }
 
+/*wolf*/
 .background4{
-  background-image: url('http://papers.co/wallpaper/papers.co-ab79-wallpaper-game-of-thrones-all-men-must-die-29-wallpaper.jpg');
+  background-image: url('http://ahuhah.com/i/game-of-thrones-wallpaper-desktop-kocyc.jpg');
 }
 
+/*jon and dany*/
 .background5{
   background-image: url('http://www.ambwallpapers.com/wp-content/uploads/2015/02/game_of_thrones_hd.jpg');
 }
+
 
 .player1_current {
   border: 5px ridge #3399FF;
