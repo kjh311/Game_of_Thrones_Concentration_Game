@@ -52,9 +52,9 @@ caption{
   background-repeat: no-repeat;
 }
 
-.square:hover{
+/*.square:hover{
   cursor: url(http://www.rw-designer.com/cursor-extern.php?id=54274), pointer;
-}
+}*/
 
 body{
   background-size: 100%;
@@ -71,27 +71,27 @@ body{
 
 /*ned*/
 .background1{
-  background-image: url('http://www.firsthdwallpapers.com/uploads/2013/05/game-of-thrones-wallpaper.jpg');
+  background-image: url('../images/background1.jpg');
 }
 
 /*targaryan shield*/
 .background2{
-  background-image: url('http://k36.kn3.net/9/1/E/2/3/E/A69.jpg');
+  background-image: url('../images/background2.jpg');
 }
 
 /*jon and ghost*/
 .background3{
-  background-image: url('http://s1.bwallpapers.com/wallpapers/2014/01/16/game-of-thrones-jon-snow_091957.jpg');
+  background-image: url('../images/background3.jpg');
 }
 
 /*wolf*/
 .background4{
-  background-image: url('http://ahuhah.com/i/game-of-thrones-wallpaper-desktop-kocyc.jpg');
+  background-image: url('../images/background4.jpg');
 }
 
 /*jon and dany*/
 .background5{
-  background-image: url('http://www.ambwallpapers.com/wp-content/uploads/2015/02/game_of_thrones_hd.jpg');
+  background-image: url('../images/background5.jpg');
 }
 
 
@@ -110,19 +110,19 @@ table{
 }
 
 .jon, .jon2{
-  background-image: url("../images/Jon_Snow.jpg");
+  background-image: url("../images/Jon.jpg");
 }
 
 .joff, .joff2{
-  background-image: url("http://img4.wikia.nocookie.net/__cb20120703113312/gameofthrones/images/0/0b/Joffrey_HBO_Promo_Shot_2012.jpg");
+  background-image: url("../images/Joffrey.jpg");
 }
 
 .cercei, .cercei2{
-  background-image: url("http://img3.wikia.nocookie.net/__cb20120316191120/gameofthrones/images/c/c2/CerseiEW.png");
+  background-image: url("../images/Cersei.jpg");
 }
 
 .drogo, .drogo2{
-  background-image: url("http://25.media.tumblr.com/f76a8989a922881a86843d344b84a3aa/tumblr_mjzry2srOL1qago3fo1_1280.jpg");
+  background-image: url("../images/KhalDrogo.jpg");
 }
 
 .selmy, .selmy2{
@@ -130,35 +130,35 @@ table{
 }
 
 .melisandre, .melisandre2{
-  background-image: url("http://img14.deviantart.net/a06a/i/2013/133/7/3/the_red_priestess_by_drkujo-d654iuf.jpg");
+  background-image: url("../images/Melisandre.jpg");
 }
 
 .dany, .dany2{
-  background-image: url("https://40.media.tumblr.com/2895c2877842762fb091b982ef7f77d6/tumblr_npn8t9sk141tc5piho1_500.png");
+  background-image: url("../images/Danny.jpg");
 }
 
 .tyrion, .tyrion2{
-  background-image: url("http://img2.wikia.nocookie.net/__cb20140623111310/gameofthrones/images/5/51/Tyrion_Lannister_Profile.jpg");
+  background-image: url("../images/Tyrion.jpg");
 }
 
 .theon, .theon2{
-  background-image: url("http://images5.fanpop.com/image/photos/28900000/got-game-of-thrones-28960534-500-646.png");
+  background-image: url("../images/Theon.jpg");
 }
 
 .ned, .ned2{
-  background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQL9DtCA_OAWAeX3BXJP7ISlO30KtbTCoIwm67KH_N4Mv4HuBCd");
+  background-image: url("../images/Ned.jpg");
 }
 
 .jamie, .jamie2{
-  background-image: url("https://upload.wikimedia.org/wikipedia/en/b/b5/JaimeLannister.jpg");
+  background-image: url("../images/JaimeLannister.jpg");
 }
 
 .jorah, .jorah2{
-  background-image: url("http://36.media.tumblr.com/tumblr_m55cyjhxhl1r1pxrwo1_500.jpg");
+  background-image: url("../images/Jorah.jpg");
 }
 
 .back{
-  background-image: url("http://img2.wikia.nocookie.net/__cb20110408162149/gameofthrones/images/0/0b/House_Lannister_banner.jpg");
+  background-image: url("../images/BackOfCard.jpg");
 }
 
 /*snow falling effect*/
