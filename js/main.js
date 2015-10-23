@@ -5,10 +5,10 @@
 $( document ).ready(function() {
 
   // http://www.zachstronaut.com/projects/rotate3di/#demos
-  $('#a').click(function () {$(this).rotate3Di('-=180', 1000);});
+  // $('#a').click(function () {$(this).rotate3Di('-=180', 1000);});
 
   //fade in
-  $('*').fadeTo(0, 0).fadeTo(1500, 1);
+  $('*').fadeTo(0, 0).fadeTo(1000, 1);
 
   //array that holds the various classes
   var arr = ["jon", "jon2", "joff", "joff2", "cercei", "cercei2", "drogo", "drogo2", "selmy", "selmy2", "melisandre", "melisandre2", "dany", "dany2", "tyrion", "tyrion2", "theon", "theon2", "ned", "ned2", "jamie", "jamie2", "jorah", "jorah2"];
@@ -201,17 +201,36 @@ var check_if_match = function(){
 }
 
 
+// $('#a').click(function(){
+//   //can't click on card if false
+//   if (game_on === "false"){
+//     return;
+//   }else{
+//     //changes back of card to picture determined from shuffled array
+//     $('#a').removeClass('back').addClass(arr[0]);
+//     memory_value.push($('#a'));
+//     tiles_flipped ++;
+
+// //don't want to be able to click on the same card twice
+//     if (memory_value[0].hasClass(arr[0]) && memory_value[1].hasClass(arr[0])){
+//       memory_value.pop();
+//       tiles_flipped --;
+//       return;
+//     }else{
+//       check_if_match();
+//       check_current_player();
+//   }
+// }
+// });
+
 $('#a').click(function(){
-  //can't click on card if false
   if (game_on === "false"){
     return;
   }else{
-    //changes back of card to picture determined from shuffled array
-    $('#a').removeClass('back').addClass(arr[0]);
+  $('#a').removeClass('back').addClass(arr[0]);
     memory_value.push($('#a'));
     tiles_flipped ++;
 
-//don't want to be able to click on the same card twice
     if (memory_value[0].hasClass(arr[0]) && memory_value[1].hasClass(arr[0])){
       memory_value.pop();
       tiles_flipped --;
@@ -667,5 +686,4 @@ location.reload();
 setTimeout(fade_out, 1000);
 });
 });
-
 
