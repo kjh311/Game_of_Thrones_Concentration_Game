@@ -110,7 +110,7 @@ table{
 }
 
 .jon, .jon2{
-  background-image: url("http://img2.wikia.nocookie.net/__cb20150512181258/gameofthrones/images/9/95/Jon_Snow_(S05E05).jpg");
+  background-image: url("../images/Jon_Snow.jpg");
 }
 
 .joff, .joff2{
@@ -126,7 +126,7 @@ table{
 }
 
 .selmy, .selmy2{
-  background-image: url("http://static.comicvine.com/uploads/original/11117/111170099/3979483-9410200601-31981.jpg");
+  background-image:url('../images/Bariston.jpg');
 }
 
 .melisandre, .melisandre2{
