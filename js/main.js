@@ -201,33 +201,41 @@ var check_if_match = function(){
 }
 
 
-// $('#a').click(function(){
-//   //can't click on card if false
-//   if (game_on === "false"){
-//     return;
-//   }else{
-//     //changes back of card to picture determined from shuffled array
-//     $('#a').removeClass('back').addClass(arr[0]);
-//     memory_value.push($('#a'));
-//     tiles_flipped ++;
-
-// //don't want to be able to click on the same card twice
-//     if (memory_value[0].hasClass(arr[0]) && memory_value[1].hasClass(arr[0])){
-//       memory_value.pop();
-//       tiles_flipped --;
-//       return;
-//     }else{
-//       check_if_match();
-//       check_current_player();
-//   }
-// }
-// });
-
-$('#a').click(function(){
+var addPicsToBackOfCard = function(){
   if (game_on === "false"){
     return;
   }else{
-  $('#a').removeClass('back').addClass(arr[0]);
+    $('#a').addClass(arr[0]);
+    $('#b').addClass(arr[1]);
+    $('#c').addClass(arr[2]);
+    $('#d').addClass(arr[3]);
+    $('#e').addClass(arr[4]);
+    $('#f').addClass(arr[5]);
+    $('#g').addClass(arr[6]);
+    $('#h').addClass(arr[7]);
+    $('#i').addClass(arr[8]);
+    $('#j').addClass(arr[9]);
+    $('#k').addClass(arr[10]);
+    $('#l').addClass(arr[11]);
+    $('#m').addClass(arr[12]);
+    $('#n').addClass(arr[13]);
+    $('#o').addClass(arr[14]);
+    $('#p').addClass(arr[15]);
+    $('#q').addClass(arr[16]);
+    $('#r').addClass(arr[17]);
+    $('#s').addClass(arr[18]);
+    $('#t').addClass(arr[19]);
+    $('#u').addClass(arr[20]);
+    $('#v').addClass(arr[21]);
+    $('#w').addClass(arr[22]);
+    $('#x').addClass(arr[23]);
+}
+}
+
+addPicsToBackOfCard();
+
+$('#a').click(function(){
+  $('#a').removeClass('back');
     memory_value.push($('#a'));
     tiles_flipped ++;
 
@@ -239,14 +247,11 @@ $('#a').click(function(){
       check_if_match();
       check_current_player();
   }
-}
+
 });
 
 $('#b').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-  $('#b').removeClass('back').addClass(arr[1]);
+  $('#b').removeClass('back');
     memory_value.push($('#b'));
     tiles_flipped ++;
 
@@ -258,14 +263,10 @@ $('#b').click(function(){
       check_if_match();
       check_current_player();
   }
-}
 });
 
 $('#c').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#c').removeClass('back').addClass(arr[2]);
+    $('#c').removeClass('back');
     memory_value.push($('#c'));
     tiles_flipped ++;
 
@@ -276,14 +277,10 @@ $('#c').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#d').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#d').removeClass('back').addClass(arr[3]);
+    $('#d').removeClass('back');
     memory_value.push($('#d'));
     tiles_flipped ++;
 
@@ -294,14 +291,10 @@ $('#d').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#e').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#e').removeClass('back').addClass(arr[4]);
+    $('#e').removeClass('back');
     memory_value.push($('#e'));
     tiles_flipped ++;
 
@@ -312,14 +305,10 @@ $('#e').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#f').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#f').removeClass('back').addClass(arr[5]);
+    $('#f').removeClass('back');
     memory_value.push($('#f'));
     tiles_flipped ++;
 
@@ -330,17 +319,12 @@ $('#f').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#g').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#g').removeClass('back').addClass(arr[6]);
+    $('#g').removeClass('back');
     memory_value.push($('#g'));
     tiles_flipped ++;
-
     if (memory_value[0].hasClass(arr[6]) && memory_value[1].hasClass(arr[6])){
       memory_value.pop();
       tiles_flipped --;
@@ -348,14 +332,10 @@ $('#g').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#h').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#h').removeClass('back').addClass(arr[7]);
+    $('#h').removeClass('back');
     memory_value.push($('#h'));
     tiles_flipped ++;
 
@@ -366,14 +346,10 @@ $('#h').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#i').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#i').removeClass('back').addClass(arr[8]);
+    $('#i').removeClass('back');
     memory_value.push($('#i'));
     tiles_flipped ++;
 
@@ -384,14 +360,10 @@ $('#i').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#j').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#j').removeClass('back').addClass(arr[9]);
+    $('#j').removeClass('back')
     memory_value.push($('#j'));
     tiles_flipped ++;
 
@@ -402,14 +374,10 @@ $('#j').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#k').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#k').removeClass('back').addClass(arr[10]);
+    $('#k').removeClass('back');
     memory_value.push($('#k'));
     tiles_flipped ++;
 
@@ -420,14 +388,10 @@ $('#k').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
  $('#l').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#l').removeClass('back').addClass(arr[11]);
+    $('#l').removeClass('back');
     memory_value.push($('#l'));
     tiles_flipped ++;
 
@@ -438,14 +402,10 @@ $('#k').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#m').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#m').removeClass('back').addClass(arr[12]);
+    $('#m').removeClass('back');
     memory_value.push($('#m'));
     tiles_flipped ++;
 
@@ -456,14 +416,10 @@ $('#m').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#n').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#n').removeClass('back').addClass(arr[13]);
+    $('#n').removeClass('back');
     memory_value.push($('#n'));
     tiles_flipped ++;
 
@@ -474,14 +430,10 @@ $('#n').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#o').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#o').removeClass('back').addClass(arr[14]);
+    $('#o').removeClass('back');
     memory_value.push($('#o'));
     tiles_flipped ++;
 
@@ -492,14 +444,10 @@ $('#o').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#p').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#p').removeClass('back').addClass(arr[15]);
+    $('#p').removeClass('back');
     memory_value.push($('#p'));
     tiles_flipped ++;
 
@@ -510,14 +458,10 @@ $('#p').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#q').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#q').removeClass('back').addClass(arr[16]);
+    $('#q').removeClass('back');
     memory_value.push($('#q'));
     tiles_flipped ++;
 
@@ -528,14 +472,10 @@ $('#q').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#r').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#r').removeClass('back').addClass(arr[17]);
+    $('#r').removeClass('back');
     memory_value.push($('#r'));
     tiles_flipped ++;
 
@@ -546,14 +486,10 @@ $('#r').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#s').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#s').removeClass('back').addClass(arr[18]);
+    $('#s').removeClass('back');
     memory_value.push($('#s'));
     tiles_flipped ++;
 
@@ -564,14 +500,10 @@ $('#s').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#t').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#t').removeClass('back').addClass(arr[19]);
+    $('#t').removeClass('back');
     memory_value.push($('#t'));
     tiles_flipped ++;
 
@@ -582,14 +514,10 @@ $('#t').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#u').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#u').removeClass('back').addClass(arr[20]);
+    $('#u').removeClass('back');
     memory_value.push($('#u'));
     tiles_flipped ++;
 
@@ -600,14 +528,10 @@ $('#u').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#v').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#v').removeClass('back').addClass(arr[21]);
+    $('#v').removeClass('back');
     memory_value.push($('#v'));
     tiles_flipped ++;
 
@@ -618,14 +542,10 @@ $('#v').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#w').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#w').removeClass('back').addClass(arr[22]);
+    $('#w').removeClass('back');
     memory_value.push($('#w'));
     tiles_flipped ++;
 
@@ -636,14 +556,10 @@ $('#w').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 $('#x').click(function(){
-  if (game_on === "false"){
-    return;
-  }else{
-    $('#x').removeClass('back').addClass(arr[23]);
+    $('#x').removeClass('back');
     memory_value.push($('#x'));
     tiles_flipped ++;
 
@@ -654,7 +570,6 @@ $('#x').click(function(){
       check_if_match();
       check_current_player();
     }
-  }
 });
 
 //make is snow
