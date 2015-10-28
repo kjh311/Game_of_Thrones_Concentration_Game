@@ -235,6 +235,9 @@ var addPicsToBackOfCard = function(){
 addPicsToBackOfCard();
 
 $('#a').click(function(){
+  if (game_on === "false"){
+    return;
+  }else{
   $('#a').removeClass('back');
     memory_value.push($('#a'));
     tiles_flipped ++;
@@ -246,11 +249,14 @@ $('#a').click(function(){
     }else{
       check_if_match();
       check_current_player();
+    }
   }
-
 });
 
 $('#b').click(function(){
+  if (game_on === "false"){
+    return;
+  }else{
   $('#b').removeClass('back');
     memory_value.push($('#b'));
     tiles_flipped ++;
@@ -262,10 +268,14 @@ $('#b').click(function(){
     }else{
       check_if_match();
       check_current_player();
+    }
   }
 });
 
 $('#c').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#c').removeClass('back');
     memory_value.push($('#c'));
     tiles_flipped ++;
@@ -277,9 +287,13 @@ $('#c').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 $('#d').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#d').removeClass('back');
     memory_value.push($('#d'));
     tiles_flipped ++;
@@ -291,9 +305,13 @@ $('#d').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 $('#e').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#e').removeClass('back');
     memory_value.push($('#e'));
     tiles_flipped ++;
@@ -305,9 +323,13 @@ $('#e').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 $('#f').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#f').removeClass('back');
     memory_value.push($('#f'));
     tiles_flipped ++;
@@ -319,9 +341,13 @@ $('#f').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 $('#g').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#g').removeClass('back');
     memory_value.push($('#g'));
     tiles_flipped ++;
@@ -332,9 +358,14 @@ $('#g').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
+
 $('#h').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#h').removeClass('back');
     memory_value.push($('#h'));
     tiles_flipped ++;
@@ -346,9 +377,13 @@ $('#h').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 $('#i').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#i').removeClass('back');
     memory_value.push($('#i'));
     tiles_flipped ++;
@@ -360,9 +395,13 @@ $('#i').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 $('#j').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#j').removeClass('back')
     memory_value.push($('#j'));
     tiles_flipped ++;
@@ -374,9 +413,13 @@ $('#j').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 $('#k').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#k').removeClass('back');
     memory_value.push($('#k'));
     tiles_flipped ++;
@@ -388,9 +431,13 @@ $('#k').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
  $('#l').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#l').removeClass('back');
     memory_value.push($('#l'));
     tiles_flipped ++;
@@ -402,9 +449,13 @@ $('#k').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 $('#m').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#m').removeClass('back');
     memory_value.push($('#m'));
     tiles_flipped ++;
@@ -416,9 +467,13 @@ $('#m').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 $('#n').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#n').removeClass('back');
     memory_value.push($('#n'));
     tiles_flipped ++;
@@ -430,9 +485,13 @@ $('#n').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 $('#o').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#o').removeClass('back');
     memory_value.push($('#o'));
     tiles_flipped ++;
@@ -444,9 +503,13 @@ $('#o').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 $('#p').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#p').removeClass('back');
     memory_value.push($('#p'));
     tiles_flipped ++;
@@ -458,9 +521,13 @@ $('#p').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 $('#q').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#q').removeClass('back');
     memory_value.push($('#q'));
     tiles_flipped ++;
@@ -472,9 +539,13 @@ $('#q').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 $('#r').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#r').removeClass('back');
     memory_value.push($('#r'));
     tiles_flipped ++;
@@ -486,9 +557,13 @@ $('#r').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 $('#s').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#s').removeClass('back');
     memory_value.push($('#s'));
     tiles_flipped ++;
@@ -500,9 +575,13 @@ $('#s').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 $('#t').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#t').removeClass('back');
     memory_value.push($('#t'));
     tiles_flipped ++;
@@ -514,9 +593,13 @@ $('#t').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 $('#u').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#u').removeClass('back');
     memory_value.push($('#u'));
     tiles_flipped ++;
@@ -528,9 +611,13 @@ $('#u').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 $('#v').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#v').removeClass('back');
     memory_value.push($('#v'));
     tiles_flipped ++;
@@ -542,9 +629,13 @@ $('#v').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 $('#w').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#w').removeClass('back');
     memory_value.push($('#w'));
     tiles_flipped ++;
@@ -556,9 +647,13 @@ $('#w').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 $('#x').click(function(){
+    if (game_on === "false"){
+    return;
+  }else{
     $('#x').removeClass('back');
     memory_value.push($('#x'));
     tiles_flipped ++;
@@ -570,6 +665,7 @@ $('#x').click(function(){
       check_if_match();
       check_current_player();
     }
+  }
 });
 
 //make is snow
