@@ -108,7 +108,7 @@ table{
 }
 
 .cercei, .cercei2{
-  background-image: url("../images/Cersei.png");
+  background-image: url("../images/Cersei.jpg");
 }
 
 .drogo, .drogo2{
@@ -124,7 +124,7 @@ table{
 }
 
 .dany, .dany2{
-  background-image: url("../images/dany.png");
+  background-image: url("../images/dany.jpg");
 }
 
 .tyrion, .tyrion2{
@@ -132,7 +132,7 @@ table{
 }
 
 .theon, .theon2{
-  background-image: url("../images/Theon.png");
+  background-image: url("../images/Theon.jpg");
 }
 
 .ned, .ned2{
