@@ -1,0 +1,414 @@
+caption{
+  color: white;
+  opacity: 0.8;
+  font-size: 40px;
+  font-family: 'IM Fell English SC', serif;
+  /*font-style: bold;*/
+}
+
+#winter{
+  border: 2px solid rgba(255,255,255,0.2);
+  width: 250px;
+  height: 45px;
+  margin: 0 auto;
+  position: relative;
+  background-color: rgba(0,0,0,0.2);
+  bottom: 240px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  font-family: 'IM Fell English SC', serif;
+  opacity: 0.6;
+  position: relative;
+}
+
+#winter:hover{
+  border: 2px outset red;
+  box-shadow: 0px 0px 25px red;
+}
+
+#winter_is_coming{
+  position: relative;
+  bottom: 20px;
+  padding: 3px;
+  font-size: 23px;
+}
+
+.square{
+  opacity: 0.7;
+  border: 5px ridge rgba(0,0,0,1);
+  height: 180px;
+  width: 110px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  background-size: 135%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.square:hover{
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=54274), pointer;
+}
+
+body{
+  background-size: 100%;
+  background-color: black;
+  background-repeat: no-repeat;
+  font-family: 'IM Fell English SC', serif;
+  font-weight: bold;
+  text-shadow:
+   -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+     2px 2px 0 #000;
+}
+
+.background1{
+  background-image: url('http://www.firsthdwallpapers.com/uploads/2013/05/game-of-thrones-wallpaper.jpg');
+}
+
+.background2{
+  background-image: url('http://cdn.wallwuzz.com/uploads/game-picture-wallwuzz-hd-wallpaper-23341.jpg');
+}
+
+.background3{
+  background-image: url('http://wallsfx.com/crush.php?src=/wallpapers/Game-of-Thrones-The-Wall-Jon-Snow-direwolf-Nights-Watch-_118035-34.jpg&h=400&w=640&zc=1');
+}
+
+.background4{
+  background-image: url('http://papers.co/wallpaper/papers.co-ab79-wallpaper-game-of-thrones-all-men-must-die-29-wallpaper.jpg');
+}
+
+.background5{
+  background-image: url('http://www.ambwallpapers.com/wp-content/uploads/2015/02/game_of_thrones_hd.jpg');
+}
+
+.player1_current {
+  border: 5px ridge #3399FF;
+  box-shadow: 0px 0px 25px #3399FF;
+}
+
+.player2_current {
+  border: 5px ridge #990099;
+  box-shadow: 0px 0px 25px #990099;
+}
+
+table{
+  margin: 0 auto;
+}
+
+.jon, .jon2{
+  background-image: url("http://img2.wikia.nocookie.net/__cb20150512181258/gameofthrones/images/9/95/Jon_Snow_(S05E05).jpg");
+}
+
+.joff, .joff2{
+  background-image: url("http://img4.wikia.nocookie.net/__cb20120703113312/gameofthrones/images/0/0b/Joffrey_HBO_Promo_Shot_2012.jpg");
+}
+
+.cercei, .cercei2{
+  background-image: url("http://img3.wikia.nocookie.net/__cb20120316191120/gameofthrones/images/c/c2/CerseiEW.png");
+}
+
+.drogo, .drogo2{
+  background-image: url("http://25.media.tumblr.com/f76a8989a922881a86843d344b84a3aa/tumblr_mjzry2srOL1qago3fo1_1280.jpg");
+}
+
+.selmy, .selmy2{
+  background-image: url("http://static.comicvine.com/uploads/original/11117/111170099/3979483-9410200601-31981.jpg");
+}
+
+.melisandre, .melisandre2{
+  background-image: url("http://img14.deviantart.net/a06a/i/2013/133/7/3/the_red_priestess_by_drkujo-d654iuf.jpg");
+}
+
+.dany, .dany2{
+  background-image: url("https://40.media.tumblr.com/2895c2877842762fb091b982ef7f77d6/tumblr_npn8t9sk141tc5piho1_500.png");
+}
+
+.tyrion, .tyrion2{
+  background-image: url("http://img2.wikia.nocookie.net/__cb20140623111310/gameofthrones/images/5/51/Tyrion_Lannister_Profile.jpg");
+}
+
+.theon, .theon2{
+  background-image: url("http://images5.fanpop.com/image/photos/28900000/got-game-of-thrones-28960534-500-646.png");
+}
+
+.ned, .ned2{
+  background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQL9DtCA_OAWAeX3BXJP7ISlO30KtbTCoIwm67KH_N4Mv4HuBCd");
+}
+
+.jamie, .jamie2{
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/b/b5/JaimeLannister.jpg");
+}
+
+.jorah, .jorah2{
+  background-image: url("http://36.media.tumblr.com/tumblr_m55cyjhxhl1r1pxrwo1_500.jpg");
+}
+
+.back{
+  background-image: url("http://img2.wikia.nocookie.net/__cb20110408162149/gameofthrones/images/0/0b/House_Lannister_banner.jpg");
+}
+
+/*snow falling effect*/
+.snow{
+  background: none;
+  font-family: Androgyne;
+  background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index:-1;
+  -webkit-animation: snow 15s linear infinite;
+  -moz-animation: snow 15s linear infinite;
+  -ms-animation: snow 15s linear infinite;
+  animation: snow 15s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+.player{
+  color: white;
+  opacity: 0.9;
+  font-size: 30px;
+}
+
+#player1{
+  float: left;
+}
+
+#player2{
+  float: right;
+  display: relative;
+}
+
+.player_name{
+  background-color: black;
+  border-radius: 20px;
+  padding: 5px;
+  border: 3px outset black;
+}
+
+.player1Current{
+  background-color: #3399FF;
+  opacity: 0.9;
+  border-radius: 20px;
+  border: 3px outset black;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -mz-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+.player2Current{
+  background-color: #990099;
+  opacity: 0.9;
+  border-radius: 20px;
+  border: 3px ridge black;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -mz-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+#player1_Score{
+  position: relative;
+  left: 50px;
+  font-size: 100px;
+  opacity: 0.9;
+}
+
+#player2_Score{
+  position: relative;
+  left: 20px;
+  font-size: 100px;
+  opacity: 0.9;
+}
+
+#play_again{
+  height: 200px;
+  width: 450px;
+  margin: 0 auto;
+  border-radius: 20px;
+  position: relative;
+  bottom: 250px;
+  color: white;
+  font-size: 40px;
+  opacity: 0.7;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+#winner_is{
+  text-align: center;
+  opacity: 0.5;
+}
+
+#winner{
+  text-align: center;
+  position: relative;
+  bottom: 40px;
+  opacity: 0.8;
+}
+
+#button{
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  left: 140px;
+  bottom: 80px;
+  height: 90px;
+  width: 170px;
+  border-radius: 10px;
+  opacity: 0.8;
+  font-size: 25px;
+  color: white;
+  background-color: rgba(0,0,0, 0.2);
+  font-family: 'IM Fell English SC', serif;
+}
+
+#button:hover{
+  border: 2px outset red;
+  box-shadow: 0px 0px 25px red;
+}
+
+@media screen and (max-width: 1000px) {
+.square{
+  height: 150px;
+}
+
+table{
+  position: relative;
+  bottom: 50px;
+  width: 100%;
+}
+
+#winter{
+  position: relative;
+  bottom: 280px;
+}
+
+.player{
+font-size: 20px;
+}
+
+body{
+  background-size: contain;
+  background-position: right;
+}
+
+#player1_Score{
+  font-size: 50px;
+}
+
+#player2_Score{
+  font-size: 50px;
+}
+
+#play_again{
+  bottom: 400px;
+}
+
+caption{
+  font-size: 30px;
+}
+}
+
+@media screen and (max-width: 700px) {
+.square{
+  height: 100px;
+}
+table{
+ width: 100%;
+}
+
+caption{
+  font-size: 20px;
+}
+
+#player1_Score{
+  position: relative;
+  bottom: 10px;
+}
+
+#player2_Score{
+  position: relative;
+  bottom: 10px;
+}
+}
+
+@media screen and (max-width: 580px) {
+.square{
+  height: 80px;
+}
+
+caption{
+  position: relative;
+  bottom: 30px;
+}
+
+#play_again{
+  position: relative;
+  bottom: 40px;
+}
+
+#winner_is{
+  font-size: 15px;
+  position: relative;
+  bottom: 50px;
+}
+
+#winner{
+  font-size: 15px;
+  position: relative;
+  bottom: 40px;
+}
+
+button{
+  font-size: 15px;
+  width: 20px;
+  height: 10px;
+}
+
+table{
+  width: 100%;
+}
+
+#winter_is_coming{
+
+  position: relative;
+  bottom: 12px;
+  font-size: 15px;
+}
+
+#winter{
+  position: relative;
+  width: 170px;
+  height: 30px;
+  font-size: 10px;
+  bottom: 250px;
+}
+}
