@@ -103,3 +103,4 @@ but now if user clicks on same image twice it switches turns.
 - When the "snow effect" is on it can occasionally cause the game to not know when the game is over and may have to be reloaded.
 
 
+![site](images/site.png)
