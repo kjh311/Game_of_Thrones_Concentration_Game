@@ -59,10 +59,10 @@ body{
   font-family: 'IM Fell English SC', serif;
   font-weight: bold;
   text-shadow:
-   -2px -2px 0 #000,
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-     2px 2px 0 #000;
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  2px 2px 0 #000;
 }
 
 .background1{
@@ -296,56 +296,56 @@ table{
 }
 
 @media screen and (max-width: 1000px) {
-.square{
-  height: 150px;
-}
+  .square{
+    height: 150px;
+  }
 
-table{
-  position: relative;
-  bottom: 50px;
-  width: 100%;
-}
+  table{
+    position: relative;
+    bottom: 50px;
+    width: 100%;
+  }
 
-#winter{
-  position: relative;
-  bottom: 280px;
-}
+  #winter{
+    position: relative;
+    bottom: 280px;
+  }
 
-.player{
-font-size: 20px;
-}
+  .player{
+    font-size: 20px;
+  }
 
-body{
-  background-size: contain;
-  background-position: right;
-}
+  body{
+    background-size: contain;
+    background-position: right;
+  }
 
-#player1_Score{
-  font-size: 50px;
-}
+  #player1_Score{
+    font-size: 50px;
+  }
 
-#player2_Score{
-  font-size: 50px;
-}
+  #player2_Score{
+    font-size: 50px;
+  }
 
-#play_again{
-  bottom: 400px;
-}
+  #play_again{
+    bottom: 400px;
+  }
 
-caption{
-  font-size: 30px;
-}
+  caption{
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 700px) {
-.square{
-  height: 100px;
-}
-table{
- width: 100%;
-}
+  .square{
+    height: 100px;
+  }
+  table{
+   width: 100%;
+ }
 
-caption{
+ caption{
   font-size: 20px;
 }
 
@@ -361,54 +361,54 @@ caption{
 }
 
 @media screen and (max-width: 580px) {
-.square{
-  height: 80px;
-}
+  .square{
+    height: 80px;
+  }
 
-caption{
-  position: relative;
-  bottom: 30px;
-}
+  caption{
+    position: relative;
+    bottom: 30px;
+  }
 
-#play_again{
-  position: relative;
-  bottom: 40px;
-}
+  #play_again{
+    position: relative;
+    bottom: 40px;
+  }
 
-#winner_is{
-  font-size: 15px;
-  position: relative;
-  bottom: 50px;
-}
+  #winner_is{
+    font-size: 15px;
+    position: relative;
+    bottom: 50px;
+  }
 
-#winner{
-  font-size: 15px;
-  position: relative;
-  bottom: 40px;
-}
+  #winner{
+    font-size: 15px;
+    position: relative;
+    bottom: 40px;
+  }
 
-button{
-  font-size: 15px;
-  width: 20px;
-  height: 10px;
-}
+  button{
+    font-size: 15px;
+    width: 20px;
+    height: 10px;
+  }
 
-table{
-  width: 100%;
-}
+  table{
+    width: 100%;
+  }
 
-#winter_is_coming{
+  #winter_is_coming{
 
-  position: relative;
-  bottom: 12px;
-  font-size: 15px;
-}
+    position: relative;
+    bottom: 12px;
+    font-size: 15px;
+  }
 
-#winter{
-  position: relative;
-  width: 170px;
-  height: 30px;
-  font-size: 10px;
-  bottom: 250px;
-}
+  #winter{
+    position: relative;
+    width: 170px;
+    height: 30px;
+    font-size: 10px;
+    bottom: 250px;
+  }
 }

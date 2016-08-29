@@ -1,5 +1,5 @@
 
-  console.log('Game Working!');
+console.log('Game Working!');
 
 //jQuery code gets run inside
 $( document ).ready(function() {
@@ -11,7 +11,7 @@ $( document ).ready(function() {
   var arr = ["jon", "jon2", "joff", "joff2", "cercei", "cercei2", "drogo", "drogo2", "selmy", "selmy2", "melisandre", "melisandre2", "dany", "dany2", "tyrion", "tyrion2", "theon", "theon2", "ned", "ned2", "jamie", "jamie2", "jorah", "jorah2"];
 
   //empty array that the 2 flipped cards get added to temporarily
-   memory_value = [];
+  memory_value = [];
 
   var tiles_flipped = 0;
 
@@ -29,23 +29,23 @@ $( document ).ready(function() {
 
   //randomize background image
   function random_background() {
-  var random = Math.random();
-  if (random < 0.2){
-    $('body').addClass('background1');
-  }else if (random < 0.4){
-    $('body').addClass('background2');
-  }else if (random < 0.6){
-    $('body').addClass('background3');
-  }else if (random < 0.8){
-    $('body').addClass('background4');
-  }else {
-    $('body').addClass('background5');
+    var random = Math.random();
+    if (random < 0.2){
+      $('body').addClass('background1');
+    }else if (random < 0.4){
+      $('body').addClass('background2');
+    }else if (random < 0.6){
+      $('body').addClass('background3');
+    }else if (random < 0.8){
+      $('body').addClass('background4');
+    }else {
+      $('body').addClass('background5');
+    }
   }
-}
-random_background();
+  random_background();
 
 //function that shuffles the array
-  function shuffle(array) {
+function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex ;
   // While there remain elements to shuffle...
   while (0 !== currentIndex) {
@@ -72,7 +72,7 @@ function changeTurn() {
     current_player = 'player2';
   } else {
     $('#player2 p').removeClass('player2Current');
-     current_player = 'player1';
+    current_player = 'player1';
   }
 }
 
@@ -85,28 +85,28 @@ var check_current_player = function(){
 
     //border of card changes depending on player
     $(".square").hover(function() {
-        $(this).removeClass("player2_current");
+      $(this).removeClass("player2_current");
     });
 
-      $(".square").hover(function() {
+    $(".square").hover(function() {
       $(this).addClass("player1_current");
     }, function() {
       $(this).removeClass("player1_current");
     });
 
-    }else if (current_player === "player2"){
-       $('#player2 p').addClass('player2Current');
+  }else if (current_player === "player2"){
+   $('#player2 p').addClass('player2Current');
 
-      $(".square").hover(function() {
-      $(this).removeClass("player1_current");
-    });
+   $(".square").hover(function() {
+    $(this).removeClass("player1_current");
+  });
 
-      $(".square").hover(function() {
-      $(this).addClass("player2_current");
-    }, function() {
-      $(this).removeClass("player2_current");
-    });
-  }
+   $(".square").hover(function() {
+    $(this).addClass("player2_current");
+  }, function() {
+    $(this).removeClass("player2_current");
+  });
+ }
 }
 
 //turns classes of player 1 on
@@ -121,7 +121,7 @@ var check_if_match = function(){
 
     //checks to see if two cards match
     //I'm sure there's some way to make this shorter somehow
-      if (memory_value[0].hasClass('jon') && memory_value[1].hasClass('jon2') || memory_value[0].hasClass('jon2') && memory_value[1].hasClass('jon') || memory_value[0].hasClass('joff') && memory_value[1].hasClass('joff2') || memory_value[0].hasClass('joff2') && memory_value[1].hasClass('joff') || memory_value[0].hasClass('cercei') && memory_value[1].hasClass('cercei2') || memory_value[0].hasClass('cercei2') && memory_value[1].hasClass('cercei') || memory_value[0].hasClass('drogo') && memory_value[1].hasClass('drogo2') || memory_value[0].hasClass('drogo2') && memory_value[1].hasClass('drogo') || memory_value[0].hasClass('selmy') && memory_value[1].hasClass('selmy2') || memory_value[0].hasClass('selmy2') && memory_value[1].hasClass('selmy') || memory_value[0].hasClass('melisandre') && memory_value[1].hasClass('melisandre2') || memory_value[0].hasClass('melisandre2') && memory_value[1].hasClass('melisandre') || memory_value[0].hasClass('dany') && memory_value[1].hasClass('dany2') || memory_value[0].hasClass('dany2') && memory_value[1].hasClass('dany') || memory_value[0].hasClass('tyrion') && memory_value[1].hasClass('tyrion2') || memory_value[0].hasClass('tyrion2') && memory_value[1].hasClass('tyrion') || memory_value[0].hasClass('theon') && memory_value[1].hasClass('theon2') || memory_value[0].hasClass('theon2') && memory_value[1].hasClass('theon') || memory_value[0].hasClass('ned') && memory_value[1].hasClass('ned2') || memory_value[0].hasClass('ned2') && memory_value[1].hasClass('ned') || memory_value[0].hasClass('jamie') && memory_value[1].hasClass('jamie2') || memory_value[0].hasClass('jamie2') && memory_value[1].hasClass('jamie') || memory_value[0].hasClass('jorah') && memory_value[1].hasClass('jorah2') || (memory_value[0].hasClass('jorah2') && memory_value[1].hasClass('jorah')))  {
+    if (memory_value[0].hasClass('jon') && memory_value[1].hasClass('jon2') || memory_value[0].hasClass('jon2') && memory_value[1].hasClass('jon') || memory_value[0].hasClass('joff') && memory_value[1].hasClass('joff2') || memory_value[0].hasClass('joff2') && memory_value[1].hasClass('joff') || memory_value[0].hasClass('cercei') && memory_value[1].hasClass('cercei2') || memory_value[0].hasClass('cercei2') && memory_value[1].hasClass('cercei') || memory_value[0].hasClass('drogo') && memory_value[1].hasClass('drogo2') || memory_value[0].hasClass('drogo2') && memory_value[1].hasClass('drogo') || memory_value[0].hasClass('selmy') && memory_value[1].hasClass('selmy2') || memory_value[0].hasClass('selmy2') && memory_value[1].hasClass('selmy') || memory_value[0].hasClass('melisandre') && memory_value[1].hasClass('melisandre2') || memory_value[0].hasClass('melisandre2') && memory_value[1].hasClass('melisandre') || memory_value[0].hasClass('dany') && memory_value[1].hasClass('dany2') || memory_value[0].hasClass('dany2') && memory_value[1].hasClass('dany') || memory_value[0].hasClass('tyrion') && memory_value[1].hasClass('tyrion2') || memory_value[0].hasClass('tyrion2') && memory_value[1].hasClass('tyrion') || memory_value[0].hasClass('theon') && memory_value[1].hasClass('theon2') || memory_value[0].hasClass('theon2') && memory_value[1].hasClass('theon') || memory_value[0].hasClass('ned') && memory_value[1].hasClass('ned2') || memory_value[0].hasClass('ned2') && memory_value[1].hasClass('ned') || memory_value[0].hasClass('jamie') && memory_value[1].hasClass('jamie2') || memory_value[0].hasClass('jamie2') && memory_value[1].hasClass('jamie') || memory_value[0].hasClass('jorah') && memory_value[1].hasClass('jorah2') || (memory_value[0].hasClass('jorah2') && memory_value[1].hasClass('jorah')))  {
 
       //turns off the ability to click on cards while two mismatches are turned upright
       game_on = "false";
@@ -184,14 +184,14 @@ var check_if_match = function(){
       game_on = "false";
 
       //flip mismatches back over after a second
-    var flip_cards = function(){
+      var flip_cards = function(){
 
-      memory_value[0].addClass('back');
-      memory_value[1].addClass('back');
-      memory_value = [];
-      game_on = "true";
-    };
-    setTimeout(flip_cards, 1000);
+        memory_value[0].addClass('back');
+        memory_value[1].addClass('back');
+        memory_value = [];
+        game_on = "true";
+      };
+      setTimeout(flip_cards, 1000);
       tiles_flipped = 0;
     }
   }
@@ -209,14 +209,14 @@ $('#a').click(function(){
     tiles_flipped ++;
 
 //don't want to be able to click on the same card twice
-    if (memory_value[0].hasClass(arr[0]) && memory_value[1].hasClass(arr[0])){
-      memory_value.pop();
-      tiles_flipped --;
-      return;
-    }else{
-      check_if_match();
-      check_current_player();
-  }
+if (memory_value[0].hasClass(arr[0]) && memory_value[1].hasClass(arr[0])){
+  memory_value.pop();
+  tiles_flipped --;
+  return;
+}else{
+  check_if_match();
+  check_current_player();
+}
 }
 });
 
@@ -224,7 +224,7 @@ $('#b').click(function(){
   if (game_on === "false"){
     return;
   }else{
-  $('#b').removeClass('back').addClass(arr[1]);
+    $('#b').removeClass('back').addClass(arr[1]);
     memory_value.push($('#b'));
     tiles_flipped ++;
 
@@ -235,8 +235,8 @@ $('#b').click(function(){
     }else{
       check_if_match();
       check_current_player();
+    }
   }
-}
 });
 
 $('#c').click(function(){
@@ -401,7 +401,7 @@ $('#k').click(function(){
   }
 });
 
- $('#l').click(function(){
+$('#l').click(function(){
   if (game_on === "false"){
     return;
   }else{
@@ -659,7 +659,7 @@ $('*').fadeTo(1000, 0);
 
 var fade_out = function(){
   //reload page
-location.reload();
+  location.reload();
 }
 setTimeout(fade_out, 1000);
 });
